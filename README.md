@@ -22,7 +22,6 @@ Definición de usuario***
  -Mapa de flujo
  
  ***Características***
- - Prototipo  
  - Prototipado de baja fidelidad
  - Feedback
  - Prototipado de alta fidelidad   
