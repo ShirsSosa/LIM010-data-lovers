@@ -3,27 +3,31 @@
 ![enter image description here](https://lh3.googleusercontent.com/SC-2SnuIwPIdH6h1SvW2JNDe614ysBZUTm9Ms_RjqolKU0DYXqsxh9SflzAS0vBfFFsupZ2N-oRq "PokeFan_logo")
 ## Índice
 
- - Resumen del proyecto
- - Definición de usuario
-       -Quién no es el usuario de PokeFan GO
-       -Entrevistas
-       -Usuarios Personas
-       -Usuario Ideal
-       -Entrevista
-       -Hallazgos
- - Definición del producto
+ - 
+
+***Resumen del proyecto
+Definición de usuario*** 
+ - Quién no es el usuario de PokeFan GO
+ - Entrevistas
+ - Usuarios Personas
+ - Usuario Ideal
+ - Entrevista
+ - Hallazgos
+
+ ***Definición del producto***
  -¿Qué problema resuelve?
  -Necesidades
  -Objetivos del producto
  -Requerimientos del producto
  -Mapa de flujo
  
- -Características
- - Prototipo 
-    -Prototipado de baja fidelidad
-    -Feedback
-    -Prototipado de alta fidelidad   
-    -Feedback
+ ***Características***
+ - Prototipo  
+
+ - Prototipado de baja fidelidad
+ - Feedback
+ - Prototipado de alta fidelidad   
+ - Feedback
  - Testeo con usuario
  
 
