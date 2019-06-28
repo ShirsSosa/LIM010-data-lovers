@@ -13,7 +13,6 @@
     background-size: cover;
     background-repeat: round;
     height: 100vh;
-
 }
 @media(max-width: 768px) {
     .inicio-sesion {
