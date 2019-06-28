@@ -35,9 +35,6 @@
     width: 340px;
     height: 480px;
 }
-.formulario-inicio-sesion:hover {
-    transform:scale(1.25); 
-}
 @media(max-width: 768px) {
 .formulario-inicio-sesion {
     margin: 0px;
