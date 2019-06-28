@@ -3,7 +3,7 @@
 ![enter image description here](https://lh3.googleusercontent.com/SC-2SnuIwPIdH6h1SvW2JNDe614ysBZUTm9Ms_RjqolKU0DYXqsxh9SflzAS0vBfFFsupZ2N-oRq "PokeFan_logo")
 ## Índice
 
- - 
+ 
 
 ***Resumen del proyecto
 Definición de usuario*** 
@@ -23,7 +23,6 @@ Definición de usuario***
  
  ***Características***
  - Prototipo  
-
  - Prototipado de baja fidelidad
  - Feedback
  - Prototipado de alta fidelidad   
@@ -41,7 +40,6 @@ Para acceder a la plataforma, se deberá contar con un usuario y contraseña, la
 ## Definición de usuario
 
 Pokemón es una saga de videojuegos creada por Satoshi Tajiri, desarrollada por Game Freak y distribuida por Nintendo, que aparecieron por primera vez en el mercado japonés el 27 de febrero de 1996. Un año después se emitió la serie animada basada en el juego. El éxito fue rotundo. Durante 20 años han sabido reinventarse, mantener a un público cautivo y atraer a nuevos usuarios.
-
 
 
 ## *Quién no es el usuario de PokeFan GO*
