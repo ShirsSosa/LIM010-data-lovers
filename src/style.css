@@ -13,16 +13,17 @@
     background-size: cover;
     background-repeat: round;
     height: 100vh;
+
 }
 @media(max-width: 768px) {
     .inicio-sesion {
-        background-image: url(./media/fondo_inicio_sesion_mobile.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
-        display: table-row;
-    }
+    background-image: url(./media/fondo_inicio_sesion_mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: table-row;
+}
 }
 .logo {
     width: 244px;
@@ -30,20 +31,19 @@
 }
 .formulario-inicio-sesion {
     background-color: rgba(95, 217, 182, 0.3);
-    /* transition: all 200ms ease-in; */
     margin: 0 auto;
-    padding: 51px;
-    width: 460px;
-    height: 516px;
+    padding: 40px;
+    width: 340px;
+    height: 480px;
 }
 .formulario-inicio-sesion:hover {
-    transform: scale(1);
+    transform:scale(1.25); 
 }
 @media(max-width: 768px) {
-    .formulario-inicio-sesion {
-        margin: 0px;
-        display: block;
-        height: 943px;
+.formulario-inicio-sesion {
+    margin: 0px;
+    display: block;
+    height: 943px;
     }
 }
 .formulario-inicio-sesion input,
@@ -58,29 +58,32 @@
     background: #FFFFFF;
     border-radius: 2px;
     border: none;
-    width: 460px;
+    width: 335px;
     height: 45px;
 }
 .microtextoguia {
-    font-size: 25px;
+    font-size: 16px;
     color: #FFFFFF;
+    border-radius: 2px;
 }
 .recordar-contraseña {
     text-align: right;
-    font-size: 18px;
+    font-size: 14px;
     color: #FFFFFF;
 }
 .btt-ingresa {
     border-radius: 5px;
     background: #05AFF2;
-    width: 460px;
+    width: 335px;
     height: 50px;
     font-family: 'Lato', sans-serif;
     color: white;
-    font-size: 24px;
+    border: none;   
+    font-size:  px;
 }
 .registrar-usuario {
     text-align: center;
     color: #FFFFFF;
-    font-size: 18px;
+    font-family: 
+    font-size: 16px;
 }

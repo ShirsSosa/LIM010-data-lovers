@@ -19,5 +19,4 @@ const validar = () => {
     }
     }
     };
-
      ingresa.addEventListener('click', validar);
