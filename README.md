@@ -5,12 +5,12 @@
 
  - Resumen del proyecto
  - Definición de usuario
-    -Quién no es el usuario de PokeFan GO
-    -Entrevistas
-    -Usuarios Personas
-    -Usuario Ideal
-    -Entrevista
-    -Hallazgos
+       -Quién no es el usuario de PokeFan GO
+       -Entrevistas
+       -Usuarios Personas
+       -Usuario Ideal
+       -Entrevista
+       -Hallazgos
  - Definición del producto
  -¿Qué problema resuelve?
  -Necesidades
