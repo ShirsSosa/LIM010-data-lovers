@@ -5,6 +5,8 @@ const usuario= document.getElementById('usuario');
 const contrasena= document.getElementById('contrasena');
 const ingresa =document.getElementById ('btt-ingresa');
 const listaDePokemones = document.getElementById('lista-de-pokemones');
+const poke = POKEMON.pokemon; //array
+const todosPokemones = document.getElementById('mostrar-pokemones');
 
  let nroIntentos = 0;  
 const validar = () => {
@@ -20,3 +22,19 @@ const validar = () => {
     }
     };
      ingresa.addEventListener('click', validar);
+
+const mostrarData = (pokemon) => {
+    let mostrar = ' ';
+    for (let i = 0; i<pokemon.length;i++){
+        let llamar = ` 
+        <div class="mostrar">
+        <p> ${pokemon[i].num}</p>
+        <img src="${pokemon[i].img}"/>
+        <p> ${pokemon[i].name}</p>
+        </div> `;
+        mostrar += llamar;
+    }
+    return mostrar;
+};
+
+todosPokemones.innerHTML = mostrarData(poke);

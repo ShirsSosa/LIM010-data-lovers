@@ -77,9 +77,29 @@
     border: none;   
     font-size:  px;
 }
+.lista-de-pokemones{
+    background: linear-gradient(to right, #24CCAA, #A2DB95);
+}
 .registrar-usuario {
     text-align: center;
     color: #FFFFFF;
-    font-family: 
     font-size: 16px;
+}
+.tipos-pokemon{
+    background: rgba(98, 217, 182, 0.3);
+}
+ul.tipos-pokemon li{
+    display: inline;
+}
+.mostrar{
+    display: inline-block;
+    display: inline-block;
+    border: 1px solid;
+    width: 270px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+.contenedor{
+    text-align: center;
 }
