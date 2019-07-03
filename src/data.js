@@ -4,29 +4,26 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 const mostrarPokemones = (pokemon) => {
-  const newArrayData = [];
-  for(let i = 0; i < pokemon.length; i++){
-    newArrayData.push({
-      nombre : pokemon[i].name,
-      img : pokemon[i].img,
-      numero : pokemon[i].num,
-    })
-  }
-  return newArrayData;
+
+const newArrayData = [];
+    for (let i = 0; i < pokemon.length; i++) {
+        newArrayData.push({
+            nombre: pokemon[i].name,
+            img: pokemon[i].img,
+            numero: pokemon[i].num,
+        })
+    }
+    return newArrayData;
+
+const mostrarAgua = (pokemon) => {
+    const newArrayData = [];
+    for (let i = 0; i < pokemon.length; i++) {
+        newArrayData.push({
+            'tipo': pokemon[i].type,
+        })
+    }
+    return newArrayData;
 };
 
-window.data = mostrarPokemones;
+window.data = mostrarAgua;
 
-const mostrarAZ = (pokemon) => {
-  const newArrayData = [];
-  for(let i = 0; i < pokemon.length; i++){
-    newArrayData.push({
-      nombre : pokemon[i].name,
-      img : pokemon[i].img,
-      numero : pokemon[i].num,
-    })
-  }
-  return newArrayData;
-};
-
-window.data = mostrarAZ;

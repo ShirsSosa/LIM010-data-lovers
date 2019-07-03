@@ -3,17 +3,22 @@
     margin: auto;
     padding: auto;
 }
-.hide {
-    display: none;
+body{
+    height: 100vh;
 }
+.hide {
+    display: none !important;
+}
+
 .inicio-sesion {
     display: flex;
     align-items: center;
+    height: 100vh;
     background-image: url("./media/fondo_inicio_sesion.png");
     background-size: cover;
     background-repeat: round;
-    height: 100vh;
 }
+
 @media(max-width: 768px) {
     .inicio-sesion {
     background-image: url(./media/fondo_inicio_sesion_mobile.png);
@@ -24,10 +29,12 @@
     display: table-row;
 }
 }
+
 .logo {
     width: 244px;
     height: 155px;
 }
+
 .formulario-inicio-sesion {
     background-color: rgba(95, 217, 182, 0.3);
     margin: 0 auto;
@@ -35,6 +42,7 @@
     width: 340px;
     height: 480px;
 }
+
 @media(max-width: 768px) {
 .formulario-inicio-sesion {
     margin: 0px;
@@ -42,6 +50,7 @@
     height: 943px;
     }
 }
+
 .formulario-inicio-sesion input,
 .formulario-inicio-sesion label,
 .formulario-inicio-sesion a,
@@ -50,6 +59,7 @@
     display: block;
     margin-bottom: 10px;
 }
+
 .usuario {
     background: #FFFFFF;
     border-radius: 2px;
@@ -57,16 +67,19 @@
     width: 335px;
     height: 45px;
 }
+
 .microtextoguia {
     font-size: 16px;
     color: #FFFFFF;
     border-radius: 2px;
 }
+
 .recordar-contraseña {
     text-align: right;
     font-size: 14px;
     color: #FFFFFF;
 }
+
 .btt-ingresa {
     border-radius: 5px;
     background: #05AFF2;
@@ -74,32 +87,86 @@
     height: 50px;
     font-family: 'Lato', sans-serif;
     color: white;
-    border: none;   
-    font-size:  px;
+    border: none;
+    font-size: px;
 }
-.lista-de-pokemones{
+
+.lista-de-pokemones {
     background: linear-gradient(to right, #24CCAA, #A2DB95);
 }
+
 .registrar-usuario {
     text-align: center;
     color: #FFFFFF;
     font-size: 16px;
 }
-.tipos-pokemon{
+.tipos-pokemon {
     background: rgba(98, 217, 182, 0.3);
 }
-ul.tipos-pokemon li{
+
+button.tipos-pokemon img {
     display: inline;
+    width: 50px;
 }
-.mostrar{
+
+.mostrar {
     display: inline-block;
-    display: inline-block;
-    border: 1px solid;
+    background-color: rgba(182, 223, 246, 0.3);
+    border-radius: 10px;
     width: 270px;
     margin: 5px;
     text-align: center;
     padding: 5px;
 }
-.contenedor{
+.contenedor {
     text-align: center;
+}
+
+button.agua,
+button.fuego,
+button.planta,
+button.roca,
+button.tierra,
+button.acero,
+button.aire,
+button.dragon,
+button.electrico,
+button.fantasma,
+button.hielo,
+button.insecto,
+button.lucha,
+button.magico,
+button.normal,
+button.oscuro,
+button.psiquico,
+button.veneno {
+    background: none;
+    border: none;
+    width: 61px;
+    margin: 5px;
+}
+button.agua:hover,
+button.fuego:hover,
+button.planta:hover,
+button.roca:hover,
+button.tierra:hover,
+button.acero:hover,
+button.aire:hover,
+button.dragon:hover,
+button.electrico:hover,
+button.fantasma:hover,
+button.hielo:hover,
+button.insecto:hover,
+button.lucha:hover,
+button.magico:hover,
+button.normal:hover,
+button.oscuro:hover,
+button.psiquico:hover,
+button.veneno:hover{
+    background: yellow;
+    border: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
 }
