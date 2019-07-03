@@ -4,7 +4,8 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 const mostrarPokemones = (pokemon) => {
-    const newArrayData = [];
+
+const newArrayData = [];
     for (let i = 0; i < pokemon.length; i++) {
         newArrayData.push({
             nombre: pokemon[i].name,
@@ -13,9 +14,6 @@ const mostrarPokemones = (pokemon) => {
         })
     }
     return newArrayData;
-};
-
-window.data = mostrarPokemones;
 
 const mostrarAgua = (pokemon) => {
     const newArrayData = [];
@@ -28,3 +26,4 @@ const mostrarAgua = (pokemon) => {
 };
 
 window.data = mostrarAgua;
+

@@ -30,16 +30,7 @@ ingresa.addEventListener('click', validar);
 const mostrarData = (pokemon) => {
     let mostrar = ' ';
     for (let i = 0; i < pokemon.length; i++) {
-        let llamar = ` 
-        <div class="mostrar">
-        <p> ${pokemon[i].num}</p>
-        <img src="${pokemon[i].img}"/>
-        <p> ${pokemon[i].name}</p>
-        </div> `;
-        mostrar += llamar;
-    }
-    return mostrar;
-};
+
 todosPokemones.innerHTML = mostrarData(poke);
 
 const mostrarPokeAgua = (pokemon) => {
@@ -58,3 +49,4 @@ const agua = document.getElementById('agua');
 agua.addEventListener('click', () => {
     agua.innerHTML = mostrarPokeAgua(poke);
 });
+
