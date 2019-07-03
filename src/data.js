@@ -14,16 +14,4 @@ const newArrayData = [];
         })
     }
     return newArrayData;
-
-const mostrarAgua = (pokemon) => {
-    const newArrayData = [];
-    for (let i = 0; i < pokemon.length; i++) {
-        newArrayData.push({
-            'tipo': pokemon[i].type,
-        })
-    }
-    return newArrayData;
-};
-
-window.data = mostrarAgua;
-
+}

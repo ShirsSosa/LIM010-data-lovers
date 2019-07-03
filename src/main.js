@@ -9,7 +9,6 @@ const poke = POKEMON.pokemon; //array
 const todosPokemones = document.getElementById('mostrar-pokemones');
 const mostrarHeader = document.getElementById('header');
 const mostrarFooter = document.getElementById('footer');
-
 let nroIntentos = 0;
 const validar = () => {
     if (contrasena.value === contrasenaCorrecta && usuario.value === usuarioCorrecto) {
@@ -26,13 +25,10 @@ const validar = () => {
     }
 };
 ingresa.addEventListener('click', validar);
-
 const mostrarData = (pokemon) => {
     let mostrar = ' ';
     for (let i = 0; i < pokemon.length; i++) {
-
 todosPokemones.innerHTML = mostrarData(poke);
-
 const mostrarPokeAgua = (pokemon) => {
     let mostrar = ' ';
     for (let i = 0; i < pokemon.length; i++) {
@@ -44,9 +40,7 @@ const mostrarPokeAgua = (pokemon) => {
     }
     return mostrar;
 };
-
 const agua = document.getElementById('agua');
 agua.addEventListener('click', () => {
     agua.innerHTML = mostrarPokeAgua(poke);
-});
-
+});}}
