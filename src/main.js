@@ -44,7 +44,10 @@ todosPokemones.innerHTML = mostrarData(poke);
 
 const mostrarPokeAgua = (pokemon) => {
     let mostrar = ' ';
-    for (let i = 0; i < pokemon.length; i++) {
+    let array = [];
+    array = mostrarAgua();
+    console.log(array);
+    for (let i = 0; i < pokemon.length; i++) {  
         let llamar = ` 
         <div class="mostrar">
         <p> ${pokemon[i].type}</p>

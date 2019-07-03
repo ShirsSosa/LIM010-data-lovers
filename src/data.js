@@ -20,9 +20,16 @@ window.data = mostrarPokemones;
 const mostrarAgua = (pokemon) => {
     const newArrayData = [];
     for (let i = 0; i < pokemon.length; i++) {
-        newArrayData.push({
-            'tipo': pokemon[i].type,
-        })
+        for(let j = 0; j < pokemon[i].type.length; j++){
+            if( pokemon[i].type[j] === 'Water'){
+                newArrayData.push({
+                    'tipo': pokemon[i].type,
+                });
+            }
+           
+          }  
+        
+       
     }
     return newArrayData;
 };

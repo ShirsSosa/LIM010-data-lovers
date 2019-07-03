@@ -168,7 +168,20 @@ button.veneno:hover{
     background: yellow;
     border: none;
 }
+header{
+    background: linear-gradient(to right, #24CCAA, #A2DB95);
+}
 footer{
     display: flex;
     justify-content: center;
+    background: linear-gradient(to right, #24CCAA, #A2DB95);
+}
+.filtrosDiseño{
+    background-color: #5FD9B6;
+    border-radius: 8px;
+    border: none;
+    color: white;
+}
+.filtros{
+    display: inline;
 }
