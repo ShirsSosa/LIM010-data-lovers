@@ -7,12 +7,16 @@ const ingresa = document.getElementById('btt-ingresa');
 const listaDePokemones = document.getElementById('lista-de-pokemones');
 const poke = POKEMON.pokemon; //array
 const todosPokemones = document.getElementById('mostrar-pokemones');
+const mostrarHeader = document.getElementById('header');
+const mostrarFooter = document.getElementById('footer');
 
 let nroIntentos = 0;
 const validar = () => {
     if (contrasena.value === contrasenaCorrecta && usuario.value === usuarioCorrecto) {
         inicioSesion.classList.add('hide');
-        listaDePokemones.classList.replace('hide', 'show');
+        listaDePokemones.classList.remove('hide');
+        mostrarHeader.classList.remove('hide');
+        mostrarFooter.classList.remove('hide');
         event.preventDefault();
     } else {
         if (nroIntentos < 1) {

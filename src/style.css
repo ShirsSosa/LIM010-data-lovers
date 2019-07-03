@@ -3,18 +3,20 @@
     margin: auto;
     padding: auto;
 }
-
+body{
+    height: 100vh;
+}
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .inicio-sesion {
     display: flex;
     align-items: center;
+    height: 100vh;
     background-image: url("./media/fondo_inicio_sesion.png");
     background-size: cover;
     background-repeat: round;
-    height: 100vh;
 }
 
 @media(max-width: 768px) {
@@ -110,7 +112,8 @@ button.tipos-pokemon img {
 
 .mostrar {
     display: inline-block;
-    border: 1px solid;
+    background-color: rgba(182, 223, 246, 0.3);
+    border-radius: 10px;
     width: 270px;
     margin: 5px;
     text-align: center;
@@ -141,7 +144,7 @@ button.psiquico,
 button.veneno {
     background: none;
     border: none;
-    width: 65px;
+    width: 61px;
     margin: 5px;
 }
 button.agua:hover,
@@ -164,4 +167,8 @@ button.psiquico:hover,
 button.veneno:hover{
     background: yellow;
     border: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
 }
