@@ -21,13 +21,13 @@ body{
 
 @media(max-width: 768px) {
     .inicio-sesion {
-    background-image: url(./media/fondo_inicio_sesion_mobile.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: table-row;
-}
+        background-image: url(./media/fondo_inicio_sesion_mobile.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        display: table-row;
+    }
 }
 
 .logo {
@@ -44,10 +44,10 @@ body{
 }
 
 @media(max-width: 768px) {
-.formulario-inicio-sesion {
-    margin: 0px;
-    display: block;
-    height: 943px;
+    .formulario-inicio-sesion {
+        margin: 0px;
+        display: block;
+        height: 943px;
     }
 }
 
@@ -100,13 +100,13 @@ body{
     color: #FFFFFF;
     font-size: 16px;
 }
+
 .tipos-pokemon {
     background: rgba(98, 217, 182, 0.3);
 }
 
 button.tipos-pokemon img {
     display: inline;
-   
 }
 
 .mostrar {
@@ -118,6 +118,7 @@ button.tipos-pokemon img {
     text-align: center;
     padding: 5px;
 }
+
 .contenedor {
     text-align: center;
 }
@@ -166,7 +167,105 @@ button.veneno:hover{
     background: yellow;
     border: none;
 }
+header{
+    background: linear-gradient(to right, #24CCAA, #A2DB95);
+}
 footer{
     display: flex;
     justify-content: center;
+    background: linear-gradient(to right, #24CCAA, #A2DB95);
+}
+.filtrosDiseño{
+    background-color: #5FD9B6;
+    border-radius: 8px;
+    border: none;
+    color: white;
+}
+.filtros{
+    display: inline;
+}
+.ventana{
+    background: red;
+
+}
+#show-modal{
+    text-align: center;
+    background-color: white;
+    padding: 15px 15px;
+    color: red;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-radius: 3.5px;
+    text-decoration: none;
+    transition: all 0.15s linear;
+}
+#show-modal:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.modal{
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 99999999;
+    background-color: rgba(0 , 0 , 0 , 0.75);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+.modal .content-modal{
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -100vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background-color: pink;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    z-index: 9999999;
+}
+.modal h1{
+    padding: 0.5em;
+    text-align: center;
+    color: #444444;
+    margin: 0;
+}
+.modal article{
+    height: 300px;
+    background-color:#A2DB95; 
+}
+.close-modal{
+    color: #e74c3c;
+    position: absolute;
+    top: 0.2em;
+    right: 0.375em;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.modal a:hover{
+    color: #c0392b;
+}
+.modal:target{
+    opacity: 1;
+    top: 0;
+}
+.modal .btn-close-modal{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+.modal:target .content-modal{
+    top: 50px;
+    transition: top 0.35s ease;
+}
+.mostrar-pokemones{
+    text-align: center;
 }

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--es para colocar el icono de la pokebola -->
+  <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
   <title> PokeFan GO </title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato%7CRoboto&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato%7CRoboto&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -23,90 +25,126 @@
         <input type="password" value="LABORATORIA" id="contrasena" class="usuario">
         <a href="http://" class="recordar-contraseña">¿Olvidaste tu Contraseña?</a>
         <button type="button" id="btt-ingresa" class="btt-ingresa">INGRESA</button>
-        <a href="http://" class="registrar-usuario">¿No tienes una cuenta? <strong> Registrate</strong> </a>
+        <a href="http://" class="registrar-usuario">¿No tienes una cuenta?
+          <strong> Registrate</strong>
+        </a>
       </form>
     </section>
     <section id="lista-de-pokemones" class="hide lista-de-pokemones">
-      <div class="tipos-pokemon">
-        <button id="agua" class="agua">
-          <img src="./media/agua.svg" alt="">
-          <label for="">AGUA</label>
-        </button>
-        <button id="fuego" class="fuego">
-          <img src="./media/fuego.svg" alt="">
-          <label for="">FUEGO</label>
-        </button>
-        <button id="planta" class="planta">
-          <img src="./media/planta.svg" alt="">
-          <label for="">PLANTA</label>
-        </button>
-        <button id="roca" class="roca">
-          <img src="./media/roca.svg" alt="">
-          <label for="">ROCA</label>
-        </button>
-        <button id="tierra" class="tierra">
-          <img src="./media/tierra.svg" alt="">
-          <label for="">TIERRA</label>
-        </button>
-        <button id="acero" class="acero">
-          <img src="./media/acero.svg" alt="">
-          <label for="">ACERO</label>
-        </button>
-        <button id="aire" class="aire">
-          <img src="./media/aire.svg" alt="">
-          <label for="">AIRE</label>
-        </button>
-        <button id="dragon" class="dragon">
-          <img src="./media/dragon.svg" alt="">
-          <label for="">DRAGON</label>
-        </button>
-        <button id="electrico" class="electrico">
-          <img src="./media/eléctrico.svg" alt="">
-          <label for="">ELECTRICO</label>
-        </button>
-        <button id="fantasma" class="fantasma">
-          <img src="./media/fantasma.svg" alt="">
-          <label for="">FANTASMA</label>
-        </button>
-        <button id="hielo" class="hielo">
-          <img src="./media/hielo.svg" alt="">
-          <label for="">HIELO</label>
-        </button>
-        <button id="insecto" class="insecto">
-          <img src="./media/insecto.svg" alt="">
-          <label for="">INSECTO</label>
-        </button>
-        <button id="lucha" class="lucha">
-          <img src="./media/lucha.svg" alt="">
-          <label for="">LUCHA</label>
-        </button>
-        <button id="magico" class="magico">
-          <img src="./media/magico.svg" alt="">
-          <label for="">MAGICO</label>
-        </button>
-        <button id="normal" class="normal">
-          <img src="./media/normal.svg" alt="">
-          <label for="">NORMAL</label>
-        </button>
-        <button id="oscuro" class="oscuro">
-          <img src="./media/oscuro.svg" alt="">
-          <label for="">OSCURO</label>
-        </button>
-        <button id="psiquico" class="psiquico">
-          <img src="./media/psiquico.svg" alt="">
-          <label for="">PSIQUICO</label>
-        </button>
-        <button id="veneno" class="veneno">
-          <img src="./media/veneno.svg" alt="">
-          <label for="">VENENO</label>
-        </button>
+      <div class="general">
+        <div class="filtros">
+          <select name="" id="" class="filtrosDiseño">
+            <option value="">POKEDEX</option>
+            <option value="">Mis pokemones</option>
+            <option value="">Los que me faltan por atrapar</option>
+          </select>
+          <select name="" id="" class="filtrosDiseño">
+            <option value="">A-Z</option>
+            <option value="">Z-A</option>
+            <option value="">Predeteminado</option>
+          </select>
+          <select name="" id="" class="filtrosDiseño">
+            <option value="">Spawn</option>
+            <option value="">A-Z</option>
+            <option value="">Z-A</option>
+          </select>
+          <select name="" id="" class="filtrosDiseño">
+            <option value="">Debilidad</option>
+            <option value="">A-Z</option>
+            <option value="">Z-A</option>
+          </select>
+        </div>
+        <div class="tipos-pokemon">
+          <button id="agua" class="agua">
+            <img src="./media/agua.svg" alt="">
+            <label for="">AGUA</label>
+          </button>
+          <button id="fuego" class="fuego">
+            <img src="./media/fuego.svg" alt="">
+            <label for="">FUEGO</label>
+          </button>
+          <button id="planta" class="planta">
+            <img src="./media/planta.svg" alt="">
+            <label for="">PLANTA</label>
+          </button>
+          <button id="roca" class="roca">
+            <img src="./media/roca.svg" alt="">
+            <label for="">ROCA</label>
+          </button>
+          <button id="tierra" class="tierra">
+            <img src="./media/tierra.svg" alt="">
+            <label for="">TIERRA</label>
+          </button>
+          <button id="acero" class="acero">
+            <img src="./media/acero.svg" alt="">
+            <label for="">ACERO</label>
+          </button>
+          <button id="aire" class="aire">
+            <img src="./media/aire.svg" alt="">
+            <label for="">AIRE</label>
+          </button>
+          <button id="dragon" class="dragon">
+            <img src="./media/dragon.svg" alt="">
+            <label for="">DRAGON</label>
+          </button>
+          <button id="electrico" class="electrico">
+            <img src="./media/eléctrico.svg" alt="">
+            <label for="">ELECTRICO</label>
+          </button>
+          <button id="fantasma" class="fantasma">
+            <img src="./media/fantasma.svg" alt="">
+            <label for="">FANTASMA</label>
+          </button>
+          <button id="hielo" class="hielo">
+            <img src="./media/hielo.svg" alt="">
+            <label for="">HIELO</label>
+          </button>
+          <button id="insecto" class="insecto">
+            <img src="./media/insecto.svg" alt="">
+            <label for="">INSECTO</label>
+          </button>
+          <button id="lucha" class="lucha">
+            <img src="./media/lucha.svg" alt="">
+            <label for="">LUCHA</label>
+          </button>
+          <button id="magico" class="magico">
+            <img src="./media/magico.svg" alt="">
+            <label for="">MAGICO</label>
+          </button>
+          <button id="normal" class="normal">
+            <img src="./media/normal.svg" alt="">
+            <label for="">NORMAL</label>
+          </button>
+          <button id="oscuro" class="oscuro">
+            <img src="./media/oscuro.svg" alt="">
+            <label for="">OSCURO</label>
+          </button>
+          <button id="psiquico" class="psiquico">
+            <img src="./media/psiquico.svg" alt="">
+            <label for="">PSIQUICO</label>
+          </button>
+          <button id="veneno" class="veneno">
+            <img src="./media/veneno.svg" alt="">
+            <label for="">VENENO</label>
+          </button>
+        </div>
       </div>
-      <p id="mostrar-pokemones" class="contenedor"></p>
-      <select name="" id="">
-        <option value="">Predeteminado</option>
-        <option value="">A-Z</option>
-        <option value="">Z-A</option>
-      </select>
+      <div id="noatrapados"></div>
+      <div id="mostrar-pokemones" class="mostrar-pokemones"></div>
+      
+      <a href="#modal" id="show-modal">Ver info</a>
+      <aside id="modal" class="modal">
+        <div class="content-modal">
+          <header>
+            <a href="#" class="close-modal">X</a>
+            <h1>Info pokemon</h1>
+            <article></article>
+          </header>
+        </div>
+        <a href="#" class="btn-close-modal"></a>
+      </aside>
+
+     
     </section>
   </main>
   <footer class="footer hide" id="footer">
@@ -116,4 +154,5 @@
   <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
