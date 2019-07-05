@@ -182,7 +182,9 @@ footer{
     color: white;
 }
 .filtros{
+    display: flex;
     display: inline;
+    justify-content: left;
 }
 .ventana{
     background: red;

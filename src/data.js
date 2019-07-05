@@ -9,6 +9,7 @@ const mostrarDatosPokemon = (array) => {
       newArrayDataPokemones.push({
         nombre : array[i].name,
         imagen : array[i].img,
+        numero :array[i].num,
       });
     }
     return newArrayDataPokemones;
