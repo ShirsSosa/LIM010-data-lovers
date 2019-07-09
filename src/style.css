@@ -9,7 +9,6 @@ body{
 .hide {
     display: none !important;
 }
-
 .inicio-sesion {
     display: flex;
     align-items: center;
@@ -18,7 +17,6 @@ body{
     background-size: cover;
     background-repeat: round;
 }
-
 @media(max-width: 768px) {
     .inicio-sesion {
         background-image: url(./media/fondo_inicio_sesion_mobile.png);
@@ -29,12 +27,10 @@ body{
         display: table-row;
     }
 }
-
 .logo {
     width: 244px;
     height: 155px;
 }
-
 .formulario-inicio-sesion {
     background-color: rgba(95, 217, 182, 0.3);
     margin: 0 auto;
@@ -42,7 +38,6 @@ body{
     width: 340px;
     height: 480px;
 }
-
 @media(max-width: 768px) {
     .formulario-inicio-sesion {
         margin: 0px;
@@ -50,7 +45,6 @@ body{
         height: 943px;
     }
 }
-
 .formulario-inicio-sesion input,
 .formulario-inicio-sesion label,
 .formulario-inicio-sesion a,
@@ -59,7 +53,6 @@ body{
     display: block;
     margin-bottom: 10px;
 }
-
 .usuario {
     background: #FFFFFF;
     border-radius: 2px;
@@ -67,19 +60,16 @@ body{
     width: 335px;
     height: 45px;
 }
-
 .microtextoguia {
     font-size: 16px;
     color: #FFFFFF;
     border-radius: 2px;
 }
-
 .recordar-contraseña {
     text-align: right;
     font-size: 14px;
     color: #FFFFFF;
 }
-
 .btt-ingresa {
     border-radius: 5px;
     background: #05AFF2;
@@ -90,25 +80,20 @@ body{
     border: none;
     font-size: px;
 }
-
 .pantalla-principal{
     background: linear-gradient(to right, #24CCAA, #A2DB95);
 }
-
 .registrar-usuario {
     text-align: center;
     color: #FFFFFF;
     font-size: 16px;
 }
-
 .tipos-pokemon {
     background: rgba(98, 217, 182, 0.3);
 }
-
 button.tipos-pokemon img {
     display: inline;
 }
-
 .mostrar {
     display: inline-block;
     background-color: rgba(182, 223, 246, 0.3);
@@ -118,11 +103,9 @@ button.tipos-pokemon img {
     text-align: center;
     padding: 5px;
 }
-
 .contenedor {
     text-align: center;
 }
-
 button.agua,
 button.fuego,
 button.planta,
@@ -164,7 +147,7 @@ button.normal:hover,
 button.oscuro:hover,
 button.psiquico:hover,
 button.veneno:hover{
-    background: yellow;
+    background: rgba(233, 113, 0, 0.6);
     border: none;
 }
 header{
@@ -190,84 +173,56 @@ footer{
     background: red;
 
 }
-#show-modal{
-    text-align: center;
-    background-color: white;
-    padding: 15px 15px;
-    color: red;
-    font-weight: 500;
-    font-size: 1.5em;
-    border-radius: 3.5px;
-    text-decoration: none;
-    transition: all 0.15s linear;
-}
-#show-modal:hover{
-    cursor: pointer;
-    background-color: red;
-}
-.modal{
-    position: fixed;
-    top: -100vh;
-    left: 0;
-    z-index: 99999999;
-    background-color: rgba(0 , 0 , 0 , 0.75);
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    transition: opacity 0.35s ease;
-}
-.modal .content-modal{
-    width: 100%;
-    max-width: 500px;
-    position: fixed;
-    left: 50%;
-    top: -100vh;
-    transition: top 0.35s ease;
-    margin-left: -250px;
-    background-color: pink;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    z-index: 9999999;
-}
-.modal h1{
-    padding: 0.5em;
-    text-align: center;
-    color: #444444;
-    margin: 0;
-}
-.modal article{
-    height: 300px;
-    background-color:#A2DB95; 
-}
-.close-modal{
-    color: #e74c3c;
-    position: absolute;
-    top: 0.2em;
-    right: 0.375em;
-    margin: 0;
-    padding: 5px;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-decoration: none;
-}
-.modal a:hover{
-    color: #c0392b;
-}
-.modal:target{
-    opacity: 1;
-    top: 0;
-}
-.modal .btn-close-modal{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999991;
-}
-.modal:target .content-modal{
-    top: 50px;
-    transition: top 0.35s ease;
-}
 .mostrar-pokemones{
     text-align: center;
 }
+/* The Modal (background) */
+.modal {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(36,39,24,0.6);
+  }
+  .imagenModal{
+    width: 188.5px;
+    height: 197px;
+  }
+  .info{
+    height: 80%;
+    width: 80%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+}  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: white;
+    margin:auto;
+    padding: 20px;
+    width: 70%;
+    height: 50%;
+    border-radius: 40px;
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .nombrePokemoncito{
+    font-size: 34px;
+  }

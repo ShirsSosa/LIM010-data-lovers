@@ -1,63 +1,63 @@
-/* Manejo de data */
-
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-/* Manejo de data */
 const mostrarDatosPokemon = (array) => {
     const newArrayDataPokemones = [];
-    for(let i = 0; i < array.length; i++){
-      newArrayDataPokemones.push({
-        nombre : array[i].name,
-        imagen : array[i].img,
-        numero :array[i].num,
-      });
-    }
+    for (let i = 0; i < array.length; i++) {
+        newArrayDataPokemones.push({
+            id : array[i].id,
+            nombre: array[i].name,
+            imagen: array[i].img,
+            numero: array[i].num,
+        });
+    };
     return newArrayDataPokemones;
-    }
+};
 
 window.mostrarDatosPokemon = mostrarDatosPokemon;
 
+//Función para mostrar caracteristica de pokemon en general
 
-
-
-
-
-
-
-/* const target = (pokemon) => {
-    const newArrayData = [];
-    for (let i = 0; i < pokemon.length; i++) {
-
-        for(let j = 0; j < pokemon[i].id.length; j++){
-            if( pokemon[i].id[j] === ''){
-                newArrayData.push({
-                    nombre: pokemon[i].name,
-                    img: pokemon[i].img,
-                    numero: pokemon[i].num,
-                });
-           }   }
+//Función para ordenar de la AZ
+const sortAZ = (array, clickOrder) => {
+    const sortName = array.sort((a, b) => {
+        if (a.name > b.name) {
+            return 1;
+        }
+        if (a.name < b.name) {
+            return -1;
+        }
+        return 0;
+    });
+    if (clickOrder === '0') {
+        return sortName;
     }
-    return newArrayData;
-} 
-
- */
-
-
-/* const mostrarAgua = (pokemon) => {
-    const newArrayData = [];
-    for (let i = 0; i < pokemon.length; i++) {
-        for(let j = 0; j < pokemon[i].type.length; j++){
-            if( pokemon[i].type[j] === 'Water'){
-                newArrayData.push({
-                    'tipo': pokemon[i].type,
-                });
-            }
-           
-          }  
-        
-       
+    if (clickOrder === '1') {
+        return sortName.reverse();
     }
-    return newArrayData;
+    return 0;
 };
-window.data = mostrarAgua;
- */
+window.sortAZ = sortAZ;
+
+const sortSpawn = (array, clickOrder) => {
+    const sortNum = array.sort((a, b) => {
+        if (a.spawn_chance > b.spawn_chance) {
+            return 1;
+        }
+        if (a.spawn_chance < b.spawn_chance) {
+            return -1;
+        }
+        return 0;
+    });
+    if (clickOrder === '0') {
+        return sortNum;
+    }
+    if (clickOrder === '1') {
+        return sortNum.reverse();
+    }
+    return 0;
+};
+window.sortSpawn = sortSpawn;
+
+ const tipoPoke = (array, condition) => {
+     const filtroTipoPoke = array.filter(caracter => (caracter.type[0] === condition || caracter.type[1] === condition));
+     return filtroTipoPoke;
+}; 
+window.tipoPoke=tipoPoke;
