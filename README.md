@@ -92,7 +92,7 @@ Usamos la siguiente pregunta filtro para corroborar que las respuestas efectivam
  - Por otro lado, son personas mayores de 20 a 36 años, que han sido los niños que crecieron viendo Pokémon.
  - Las actividades que más realizan son: caminar, ir a plazas o parques,tienen una rutina de juego; es decir, van a pokeparadas, gimnasios, capturan pokemones, realizan misiones.
 
- ##**Entrevistas a profundidad** 
+ ##Entrevistas a profundidad 
  
  Objetivo:
  
@@ -102,6 +102,7 @@ Usamos la siguiente pregunta filtro para corroborar que las respuestas efectivam
  Muestra:  4 entrevistas a jugadores identificados como "entrenadores pokémon".
 
 Hallazgos: 
+
 ![enter image description here](https://lh3.googleusercontent.com/OlJid74idHxU1BRx8zjQncD-gH_lilznNIi7a7o2h2zNwg9yPhSDLq7BVRlyZi-AvlLOPxkqWEBv)
 
 Entre nuestros entrevistados pudimos conocer que la forma más importante de visibilizar información sobre los pokemones era ordenándola de la siguiente manera : 
@@ -140,16 +141,15 @@ La mayoría opinó, que era mejor ver dicha información en una ventana emergent
  - Podemos concluir que el usuario de POKEMON GO, es cautivo, es fiel, está comprometido con el juego, usa paquete de datos móviles,
    tiene    un smartphone y valora la calidad de las gráficas.
 
+##Usuario (User persona)
 
-
-##**- Usuario (User persona)**
 ![enter image description here](https://lh3.googleusercontent.com/GR_rBBpolIdM7LquT8YBzeJ54HuppCwBWM6VOCU0ZWQJf5BMOQYqBXjPpRxHZYsa2sewdvyDxkK6)
  
 
 
 
  
- ##**PokeFan - Definición del producto**
+ ##PokeFan - Definición del producto
 
  - Necesidades del usuario
  
@@ -163,7 +163,7 @@ La mayoría opinó, que era mejor ver dicha información en una ventana emergent
     esa debilidad.
   6. Como usuaria quiero poder obtener el porcentaje de los pokemones que aparecen en los diferentes tipos de huevo para saber qué huevos    eclosionar.
 
- ##**-Wireframes - Prototipado** 
+ ##Wireframes - Prototipado
 
 **Prototipo de Baja fidelidad**
 Después de login, el usuario podrá ver todos los pokemones y los filtros con los que podrá hacer una mejor búsqueda.
