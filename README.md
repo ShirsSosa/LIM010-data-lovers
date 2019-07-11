@@ -1,6 +1,5 @@
-
-
 ![enter image description here](https://lh3.googleusercontent.com/SC-2SnuIwPIdH6h1SvW2JNDe614ysBZUTm9Ms_RjqolKU0DYXqsxh9SflzAS0vBfFFsupZ2N-oRq "PokeFan_logo")
+
 ## Índice
 
  
@@ -187,4 +186,25 @@ Cuando le damos click en el Pokémon, abre un modal donde se visualiza mayor inf
 
 :white_check_mark: Usar un solo color de fondo para los contenedores de los pokémones.
 
-**Prototipo de Alta fidelidad**
+## Prototipo de Alta fidelidad
+
+**Pantalla de Login - escritorio**
+
+![enter image description here](https://lh3.googleusercontent.com/-wNRpIzwWVXJzYEOADnXYLWh3poNMgkg62-698RtLUjrjR3YlmRMga_x69XY26HiedNAeq86phOl)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
