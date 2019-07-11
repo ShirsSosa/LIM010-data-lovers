@@ -2,149 +2,173 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--es para colocar el icono de la pokebola -->
-  <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
-  <title> PokeFan GO </title>
+  <title>PokeFan GO</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato%7CRoboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
 </head>
 
 <body>
   <header class="hide" id="header">
-    <img src="./media/logo_pokefan.png" class="logo">
+    <img src="./media/logo_pokefan.png" class="logoheader" />
+    <div class="topnav">
+      <div class="search-container">
+        <form class="search-form" action="/action_page.php">
+          <input type="text" id="poke-nombre" placeholder="Buscar..." name="search">
+          <button type="button" id="button-search" ><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <a href="https://www.pokemongo.com/es-es/">Pokemon GO</a>
+      <a class="active" href="#pantalla-principal">Home</a>
+    </div>
   </header>
   <main>
     <section id="inicio-sesion" class="inicio-sesion">
       <form class="formulario-inicio-sesion">
-        <img src="./media/logo_pokefan.png" class="logo">
+        <img src="./media/logo_pokefan.png" class="logo" />
         <label class="microtextoguia"> Correo electronico</label>
-        <input type="text" value="LABORATORIA" id="usuario" class="usuario">
+        <input type="text" value="LABORATORIA" id="usuario" class="usuario" />
         <label class="microtextoguia"> Contraseña</label>
-        <input type="password" value="LABORATORIA" id="contrasena" class="usuario">
+        <input type="password" value="LABORATORIA" id="contrasena" class="usuario" />
         <a href="http://" class="recordar-contraseña">¿Olvidaste tu Contraseña?</a>
-        <button type="button" id="btt-ingresa" class="btt-ingresa">INGRESA</button>
+        <button type="button" id="btt-ingresa" class="btt-ingresa">
+          INGRESA
+        </button>
         <a href="http://" class="registrar-usuario">¿No tienes una cuenta?
           <strong> Registrate</strong>
         </a>
       </form>
     </section>
-    <section id="lista-de-pokemones" class="hide lista-de-pokemones">
-      <div class="general">
+    <section id="pantalla-principal" class="hide pantalla-principal">
+      <div class="tipos-de-filtrado">
         <div class="filtros">
-          <select name="" id="" class="filtrosDiseño">
-            <option value="">POKEDEX</option>
-            <option value="">Mis pokemones</option>
-            <option value="">Los que me faltan por atrapar</option>
+          <select name="" id="filtrado-az" class="filtrosDiseño">
+            <option value disabled selected>Ordenar</option>
+            <option value="0">A-Z</option>
+            <option value="1">Z-A</option>
           </select>
-          <select name="" id="" class="filtrosDiseño">
-            <option value="">A-Z</option>
-            <option value="">Z-A</option>
-            <option value="">Predeteminado</option>
+          <select name="" id="filtrado-spawn" class="filtrosDiseño">
+            <option value disabled selected>Spawn</option>
+            <option value="0">Posibilidad Ascendente</option>
+            <option value="1">PosibilidadDescendente</option>
+            <option value="2">Por hora Ascendente</option>
+            <option value="3">Por hora Descendente</option>
           </select>
-          <select name="" id="" class="filtrosDiseño">
-            <option value="">Spawn</option>
-            <option value="">A-Z</option>
-            <option value="">Z-A</option>
+          <select name="" id="debilidad" class="filtrosDiseño">
+            <option value disabled selected>Debilidad</option>
+            <option value="Water" id="aguad">Agua</option>
+            <option value="Fire" id="fuegod">Fuego</option>
+            <option value="Grass" id="plantad">Planta</option>
+            <option value="Rock" id="rocad">Roca</option>
+            <option value="Ground" id="tierrad">Tierra</option>
+            <option value="Flying" id="aired">Aire</option>
+            <option value="Dragon" id="dragond">Dragon</option>
+            <option value="Electric" id="electricod">Electrico</option>
+            <option value="Ghost" id="fantasmad">Fantasma</option>
+            <option value="Ice" id="hielod">Hielo</option>
+            <option value="Bug" id="insectod">Insecto</option>
+            <option value="Fighting" id="luchad">Lucha</option>
+            <option value="Normal" id="normald">Normal</option>
+            <option value="Psychic" id="psiquicod">Psiquico</option>
+            <option value="Poison" id="venenod">Veneno</option>
+            <option value="Fairy" id="magicod">Magico</option>
+            <option value="Steel" id="acerod">Acero</option>
+            <option value="Dark" id="oscurod">Oscuro</option>
           </select>
-          <select name="" id="" class="filtrosDiseño">
-            <option value="">Debilidad</option>
-            <option value="">A-Z</option>
-            <option value="">Z-A</option>
+          <select name="" id="filtrohuevo" class="filtrosDiseño">
+            <option value disabled selected>Huevos</option>
+            <option value="2 km">2km</option>
+            <option value="5 km">5km</option>
+            <option value="10 km">10km</option>
           </select>
+          <select name="" id="pokedex" class="filtrosDiseño">
+              <option value disabled selected>POKEDEX</option>
+              <option value="null">Mis pokemones</option>
+              <option value="0">Los que me faltan por atrapar</option>
+            </select>
         </div>
         <div class="tipos-pokemon">
           <button id="agua" class="agua">
-            <img src="./media/agua.svg" alt="">
+            <img src="./media/agua.svg" alt="" />
             <label for="">AGUA</label>
           </button>
           <button id="fuego" class="fuego">
-            <img src="./media/fuego.svg" alt="">
+            <img src="./media/fuego.svg" alt="" />
             <label for="">FUEGO</label>
           </button>
           <button id="planta" class="planta">
-            <img src="./media/planta.svg" alt="">
+            <img src="./media/planta.svg" alt="" />
             <label for="">PLANTA</label>
           </button>
           <button id="roca" class="roca">
-            <img src="./media/roca.svg" alt="">
+            <img src="./media/roca.svg" alt="" />
             <label for="">ROCA</label>
           </button>
           <button id="tierra" class="tierra">
-            <img src="./media/tierra.svg" alt="">
+            <img src="./media/tierra.svg" alt="" />
             <label for="">TIERRA</label>
           </button>
-          <button id="acero" class="acero">
-            <img src="./media/acero.svg" alt="">
-            <label for="">ACERO</label>
-          </button>
           <button id="aire" class="aire">
-            <img src="./media/aire.svg" alt="">
+            <img src="./media/aire.svg" alt="" />
             <label for="">AIRE</label>
           </button>
           <button id="dragon" class="dragon">
-            <img src="./media/dragon.svg" alt="">
+            <img src="./media/dragon.svg" alt="" />
             <label for="">DRAGON</label>
           </button>
           <button id="electrico" class="electrico">
-            <img src="./media/eléctrico.svg" alt="">
+            <img src="./media/eléctrico.svg" alt="" />
             <label for="">ELECTRICO</label>
           </button>
           <button id="fantasma" class="fantasma">
-            <img src="./media/fantasma.svg" alt="">
+            <img src="./media/fantasma.svg" alt="" />
             <label for="">FANTASMA</label>
           </button>
           <button id="hielo" class="hielo">
-            <img src="./media/hielo.svg" alt="">
+            <img src="./media/hielo.svg" alt="" />
             <label for="">HIELO</label>
           </button>
           <button id="insecto" class="insecto">
-            <img src="./media/insecto.svg" alt="">
+            <img src="./media/insecto.svg" alt="" />
             <label for="">INSECTO</label>
           </button>
           <button id="lucha" class="lucha">
-            <img src="./media/lucha.svg" alt="">
+            <img src="./media/lucha.svg" alt="" />
             <label for="">LUCHA</label>
           </button>
-          <button id="magico" class="magico">
-            <img src="./media/magico.svg" alt="">
-            <label for="">MAGICO</label>
-          </button>
           <button id="normal" class="normal">
-            <img src="./media/normal.svg" alt="">
+            <img src="./media/normal.svg" alt="" />
             <label for="">NORMAL</label>
           </button>
-          <button id="oscuro" class="oscuro">
-            <img src="./media/oscuro.svg" alt="">
-            <label for="">OSCURO</label>
-          </button>
           <button id="psiquico" class="psiquico">
-            <img src="./media/psiquico.svg" alt="">
+            <img src="./media/psiquico.svg" alt="" />
             <label for="">PSIQUICO</label>
           </button>
           <button id="veneno" class="veneno">
-            <img src="./media/veneno.svg" alt="">
+            <img src="./media/veneno.svg" alt="" />
             <label for="">VENENO</label>
           </button>
         </div>
       </div>
-      <div id="noatrapados"></div>
+      <p id="contador-poke" class="contador hide"></p>
       <div id="mostrar-pokemones" class="mostrar-pokemones"></div>
-      
-      <a href="#modal" id="show-modal">Ver info</a>
-      <aside id="modal" class="modal">
-        <div class="content-modal">
-          <header>
-            <a href="#" class="close-modal">X</a>
-            <h1>Info pokemon</h1>
-            <article></article>
-          </header>
+      <!-- The Modal -->
+      <div id="my-modal" class="modal hide">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+          <span id="close" class="close">&times;</span>
+          <div id="info-de-poke" class="info"></div>
         </div>
-        <a href="#" class="btn-close-modal"></a>
-      </aside>
-
-     
+      </div>
+      </div>
+      <a href="#pantalla-principal" class="upbtn"> <i class="fas fa-arrow-up"> </i> </a>
     </section>
   </main>
   <footer class="footer hide" id="footer">
