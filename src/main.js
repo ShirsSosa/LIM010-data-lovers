@@ -3,14 +3,13 @@ const usuarioCorrecto = 'LABORATORIA';
 const inicioSesion = document.getElementById('inicio-sesion');
 const usuario = document.getElementById('usuario');
 const contrasena = document.getElementById('contrasena');
-const ingresa = document.getElementById('btt-ingresa');
+const bttIngresa = document.getElementById('btt-ingresa');
 const mostrarHeader = document.getElementById('header');
 const mostrarFooter = document.getElementById('footer');
 const listaDePokemones = document.getElementById('pantalla-principal');//en la segunda pantalla, despues e login
 const poke = POKEMON.pokemon; //array
 const todosPokemones = document.getElementById('mostrar-pokemones');//contenedor de pokemones
 const close = document.getElementById('close');
-
 let nroIntentos = 0;
 const validar = () => {
     if (contrasena.value === contrasenaCorrecta && usuario.value === usuarioCorrecto) {
@@ -26,15 +25,15 @@ const validar = () => {
         }
     }
 };
-ingresa.addEventListener('click', validar);
+bttIngresa.addEventListener('click', validar);
 /* pprincipal: Con esta funcion ya tengo  el nombre y la imagen de todos mis pokemones en div*/
 const dataPokemones = (pokemon) => {
     let mostrar = ' ';
     for (let i = 0; i < pokemon.length; i++) {
         let llamar = `
-         <div class='mostrar' name='pokemon' id=${pokemon[i].id}>
+         <div class='mostrar' name='pokemon'>
          <h1>${pokemon[i].name}</h1> 
-         <img src='${pokemon[i].img}'/>
+         <img src='${pokemon[i].img}' id=${pokemon[i].id} />
          <h2>${pokemon[i].num}</h2>
          </div>`;
         mostrar += llamar;
@@ -55,27 +54,28 @@ sortNumSpawn.addEventListener('change', () => {
     todosPokemones.innerHTML = dataPokemones(pokeOrden);
 });
 //mostrar mi pokemones en el modal
-todosPokemones.addEventListener('click', () => { //crear un evento en base a click en cada poke
-    const pokemoncito = event.target.parentElement.id - 1;
-    if (event.target.parentElement.getAttribute('name') === 'pokemon') {
-        //mostrando modal 
-        document.getElementById('my-modal').classList.remove('hide');
-        //insertando info-poke en modal
-        document.getElementById('info-de-poke').innerHTML = `
-    <img class="imagenModal" src="${POKEMON.pokemon[pokemoncito].img}"/>
-    <p class='nombrePokemoncito'> ${POKEMON.pokemon[pokemoncito].name}</p>
-    <div id="myProgress">
-      <div id="myBar"></div>
-    </div>
-    <div>
-      <div>
-        <p>Peso: ${POKEMON.pokemon[pokemoncito].weight}</p> 
-        <p>Altura: ${POKEMON.pokemon[pokemoncito].height}</p>
-      </div>    
-      <p>Tipo: ${POKEMON.pokemon[pokemoncito].type}</p> 
-      <p>Huevo: ${POKEMON.pokemon[pokemoncito].egg}</p>
-      <p>Debilidades: ${POKEMON.pokemon[pokemoncito].weaknesses}</p>
-    </div>`;
+todosPokemones.addEventListener('click', (event) => { //crear un evento en base a click en cada poke
+    const pokemoncito = parseInt(event.target.id);
+      const dataPokemonSeleccionado = POKEMON.pokemon[pokemoncito - 1]
+     if (event.target.parentElement.getAttribute('name') === 'pokemon') {
+         //mostrando modal 
+         document.getElementById('my-modal').classList.remove('hide');
+     //insertando info-poke en modal
+         document.getElementById('info-de-poke').innerHTML = `
+     <img class="imagenModal" src="${dataPokemonSeleccionado.img}"/>
+     <p class='nombrePokemoncito'> ${dataPokemonSeleccionado.name}</p>
+     <div id="myProgress">
+       <div id="myBar"></div>
+     </div>
+     <div>
+       <div>
+         <p>Peso: ${POKEMON.pokemon[pokemoncito].weight}</p> 
+         <p>Altura: ${POKEMON.pokemon[pokemoncito].height}</p>
+       </div>    
+       <p>Tipo: ${POKEMON.pokemon[pokemoncito].type}</p> 
+       <p>Huevo: ${POKEMON.pokemon[pokemoncito].egg}</p>
+       <p>Debilidades: ${POKEMON.pokemon[pokemoncito].weaknesses}</p>
+     </div>`;
     }
 });
 //cerrando modal (funcion)
@@ -211,14 +211,15 @@ veneno.addEventListener('click', () => {
     aguita = dataPokemones(arrar);
     todosPokemones.innerHTML = aguita;
 });*/
-filtrohuevo.addEventListener('change', () => {
-    const huevoKm = document.getElementById('filtrohuevo').value;
-    let stringVacio = '';
-    let arrayVacio = [];
-    arrayVacio = huevoPoke(poke, huevoKm);
-    stringVacio = dataPokemones(arrayVacio);
-    todosPokemones.innerHTML = stringVacio;
-});
+ filtrohuevo.addEventListener('change', () => {
+        const huevoKm = document.getElementById('filtrohuevo').value;
+        let stringVacio = '';
+        let arrayVacio = [];
+        arrayVacio = huevoPoke(poke, huevoKm);
+        stringVacio = dataPokemones(arrayVacio);
+        todosPokemones.innerHTML = stringVacio;
+    });
+  
 //filtro por debilidad en select
 debilidad.addEventListener('change', () => {
     const debTipo = document.getElementById('debilidad').value;

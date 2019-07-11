@@ -35,6 +35,7 @@ const mostrarDatosPokemon = (array) => {
     return 0;
   };
   window.sortAZ = sortAZ;
+  console.log(sortAZ);
   
   const sortSpawn = (array, clickOrder) => {
     const sortNum = array.sort((a, b) => {
@@ -57,19 +58,21 @@ const mostrarDatosPokemon = (array) => {
   window.sortSpawn = sortSpawn;
   //Filtrando objeto por tipo
   const tipoPoke = (array, condition) => {
-    const filtroTipoPoke = array.filter(caracter => (caracter.type[0] === condition || caracter.type[1] === condition));
+    const filtroTipoPoke = arra
+    y.filter(caracter => (caracter.type[0] === condition || caracter.type[1] === condition));
     return filtroTipoPoke;
   };
   window.tipoPoke = tipoPoke;
   //Filtrando por huevo
-  const huevoPoke = (array, condition) => {
-    const filtroHuevoPoke = array.filter(caracter => (caracter.egg[0] === condition || caracter.egg[1] === condition));
+  const huevoPoke= (array, condition) => {
+    const filtroHuevoPoke= array.filter(caracter => (caracter.egg[0] === condition));
     return filtroHuevoPoke;
   };
-  window.huevoPoke = huevoPoke;
+  window.huevoPoke = HuevoPoke;
   //Filtrando por debilidad
   const debilidadPoke = (array,condition) => {
     const filtroDebilidadPoke = array.filter(caracter => (caracter.weaknesses[0] === condition || caracter.weaknesses[1] === condition || caracter.weaknesses[2] === condition || caracter.weaknesses[3] === condition || caracter.weaknesses[4] === condition || caracter.weaknesses[5] === condition || caracter.weaknesses[6] === condition));
     return filtroDebilidadPoke;
-  };
+  }; 
+  window.huevoPoke = huevoPoke;
   window.debilidadPoke = debilidadPoke;
