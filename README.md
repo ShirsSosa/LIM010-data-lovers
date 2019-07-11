@@ -96,9 +96,12 @@ Usamos la siguiente pregunta filtro para corroborar que las respuestas efectivam
  
  Objetivo:
  
-:white_check_mark: Conocer cuál es la información más importante para este tipo de usuario.
+:white_check_mark: Conocer cuál es la información más importante para este tipo de usuario
+
 :white_check_mark: Conocer qué información buscaría este tipo de usuario.
+
 :white_check_mark: Identificar cuáles son las características más importantes/relevantes de un pokémon.
+
  Muestra:  4 entrevistas a jugadores identificados como "entrenadores pokémon".
 
 Hallazgos: 
@@ -163,7 +166,7 @@ La mayoría opinó, que era mejor ver dicha información en una ventana emergent
     esa debilidad.
   6. Como usuaria quiero poder obtener el porcentaje de los pokemones que aparecen en los diferentes tipos de huevo para saber qué huevos    eclosionar.
 
- ##Wireframes - Prototipado
+ ## Wireframes - Prototipado
 
 **Prototipo de Baja fidelidad**
 Después de login, el usuario podrá ver todos los pokemones y los filtros con los que podrá hacer una mejor búsqueda.
