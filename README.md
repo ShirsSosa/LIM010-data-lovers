@@ -45,7 +45,7 @@ Por otro lado, hemos logrado identificar algunos posibles perfiles de usuarios, 
 
 
 
-## *Encuesta explorativa de usuario**
+## Encuesta explorativa de usuario
 Objetivo: Identificar los tipos de usuarios de POKÉMON GO
 Encuesta: PokeFan Exploración Inicial 
 Muestra: 30 encuestados
@@ -92,7 +92,7 @@ Usamos la siguiente pregunta filtro para corroborar que las respuestas efectivam
  - Por otro lado, son personas mayores de 20 a 36 años, que han sido los niños que crecieron viendo Pokémon.
  - Las actividades que más realizan son: caminar, ir a plazas o parques,tienen una rutina de juego; es decir, van a pokeparadas, gimnasios, capturan pokemones, realizan misiones.
 
- ##Entrevistas a profundidad 
+ ## Entrevistas a profundidad 
  
  Objetivo:
  
@@ -141,7 +141,7 @@ La mayoría opinó, que era mejor ver dicha información en una ventana emergent
  - Podemos concluir que el usuario de POKEMON GO, es cautivo, es fiel, está comprometido con el juego, usa paquete de datos móviles,
    tiene    un smartphone y valora la calidad de las gráficas.
 
-##Usuario (User persona)
+## Usuario (User persona)
 
 ![enter image description here](https://lh3.googleusercontent.com/GR_rBBpolIdM7LquT8YBzeJ54HuppCwBWM6VOCU0ZWQJf5BMOQYqBXjPpRxHZYsa2sewdvyDxkK6)
  
@@ -149,7 +149,7 @@ La mayoría opinó, que era mejor ver dicha información en una ventana emergent
 
 
  
- ##PokeFan - Definición del producto
+ ## PokeFan - Definición del producto
 
  - Necesidades del usuario
  
