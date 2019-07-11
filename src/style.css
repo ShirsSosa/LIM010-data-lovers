@@ -1,11 +1,18 @@
 * {
     font-family: 'Roboto', sans-serif;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     outline: none;
 }
 body{
     height: 100vh;
+}
+@media(max-width: 768px) {
+    body {
+        background: linear-gradient(to right, #24CCAA, #A2DB95);
+        background-size: cover;
+        display: table-row;
+    }
 }
 .hide {
     display: none !important;
@@ -20,18 +27,28 @@ body{
 }
 @media(max-width: 768px) {
     .inicio-sesion {
-        background-image: url(./media/fondo_inicio_sesion_mobile.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
-        display: table-row;
-    }
+    background-image: url(./media/fondo_inicio_sesion_mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: table-row;
 }
-.logo {
+}
+.logoheader {
     width: 244px;
     height: 155px;
-    margin-left: 20px;
+    margin: 0px 20px;
+}
+.logo{
+    width: 244px;
+    height: 155px; 
+    margin: auto;
+
+}
+.inicio{
+    width: 244px;
+    height: 155px;
 }
 .formulario-inicio-sesion {
     background-color: rgba(95, 217, 182, 0.3);
@@ -41,10 +58,10 @@ body{
     height: 480px;
 }
 @media(max-width: 768px) {
-    .formulario-inicio-sesion {
-        margin: 0px;
-        display: block;
-        height: 943px;
+.formulario-inicio-sesion {
+    margin: 0px;
+    display: block;
+    height: 943px;
     }
 }
 .formulario-inicio-sesion input,
@@ -85,13 +102,25 @@ body{
 .pantalla-principal{
     background: linear-gradient(to right, #24CCAA, #A2DB95);
 }
+@media(max-width: 768px) {
+    .pantalla-principal {
+        background: linear-gradient(to right, #24CCAA, #A2DB95);
+        background-size: cover;
+        display: table-row;
+    }
+}
 .registrar-usuario {
     text-align: center;
     color: #FFFFFF;
     font-size: 16px;
 }
+.tipos-de-filtrado{
+    display: block;
+    text-align: center;
+}
 .tipos-pokemon {
-    background: rgba(98, 217, 182, 0.3);
+    display: flex;
+    justify-content: center;
 }
 button.tipos-pokemon img {
     display: inline;
@@ -156,6 +185,15 @@ button.veneno:hover{
 }
 header{
     background: linear-gradient(to right, #24CCAA, #A2DB95);
+    justify-content: space-between;
+    display: flex;
+}
+@media(max-width: 768px) {
+    header {
+        background: linear-gradient(to right, #24CCAA, #A2DB95);
+        background-size: cover;
+        display: table-row;
+    }
 }
 footer{
     display: flex;
@@ -300,7 +338,7 @@ footer{
   }
   .topnav .search-container button:hover {
     background: #ccc;
-  
+  }
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
   @media screen and (max-width: 600px) {
     .topnav a, .topnav input[type=text] {
@@ -314,4 +352,38 @@ footer{
     .topnav input[type=text] {
       border: 1px solid #ccc;
     }
-  }; 
+  };
+.upbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 8px;
+    background: #215498;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #FFE706;
+    font-size: 22px;
+    border-radius: 19px;
+}
+.contador{
+    background-color: rgba(182, 223, 246, 0.3);
+    border: none;
+    border-radius: 10px;
+    width: 270px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #4CAF50;
+  }
