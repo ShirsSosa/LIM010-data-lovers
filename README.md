@@ -95,7 +95,9 @@ Usamos la siguiente pregunta filtro para corroborar que las respuestas efectivam
  - Las actividades que más realizan son: caminar, ir a plazas o parques,tienen una rutina de juego; es decir, van a pokeparadas, gimnasios, capturan pokemones, realizan misiones.
 
  **Entrevistas a profundidad** 
+ 
  Objetivo:
+ 
 :white_check_mark: Conocer cuál es la información más importante para este tipo de usuario.
 :white_check_mark: Conocer qué información buscaría este tipo de usuario.
 :white_check_mark: Identificar cuáles son las características más importantes/relevantes de un pokémon.
@@ -130,10 +132,12 @@ La mayoría opinó, que era mejor ver dicha información en una ventana emergent
 ![enter image description here](https://lh3.googleusercontent.com/eas99ZtsWiX2q4ReBl5ZbFUB00V0UDQGKSZDaBNoib5i3qw3nnQ7Sw4WVoy6VtFi8nlAeJmmnP8Z)
 
 :pencil:**Conclusiones**
- -La mayoría de nuestros entrevistados ha invertido dinero en el juego, incluso más de una vez.
 
- -Además, todos pertenecen a un grupo de amigos en Whatsapp o Facebook donde se enteran de los eventos o coordinan eventos grupales. Usan aplicaciones y web alternas donde buscan información puntual sobre la performance de los pokemones, evoluciones, huevos. 
-
- -Por otro lado, todos declaran jugar por más de 6 meses consecutivos, incluso hay 1 persona que juega desde que salió la app y otra, que jugaba que también lo hacía, lo dejo porque no tenía un equipo celular ideal para juego y ha vuelto a descargar la app hace más de 8 meses.
-
- -Podemos concluir que el usuario de POKEMON GO, es cautivo, es fiel, está comprometido con el juego, usa paquete de datos móviles, tiene un smartphone y valora la calidad de las gráficas. 
+ - La mayoría de nuestros entrevistados ha invertido dinero en el juego, incluso más de una vez.
+ - Además, todos pertenecen a un grupo de amigos en Whatsapp o Facebook donde se enteran de los eventos o coordinan eventos
+   grupales. Usan    aplicaciones y web alternas donde buscan
+   información puntual sobre la    performance de los pokemones,
+   evoluciones, huevos.
+  - Por otro lado, todos declaran jugar por más de 6 meses consecutivos, incluso hay 1 persona que juega desde que salió la app  y otra,     que jugaba que también lo hacía, lo dejo porque no tenía  un equipo    celular ideal para juego y ha vuelto a descargar la app  hace     más de 8 meses.   
+ - Podemos concluir que el usuario de POKEMON GO, es cautivo, es fiel, está comprometido con el juego, usa paquete de datos móviles,
+   tiene    un smartphone y valora la calidad de las gráficas.
