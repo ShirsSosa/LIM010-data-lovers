@@ -5,16 +5,14 @@
 
  
 **PofeFan - Definición de usuario**
- - Quién no es el usuario de PokeFan GO :white_check_mark:
- - Encuestas & conclusiones :white_check_mark:
+ - Quién no es el usuario de PokeFan GO 
+ - Encuestas & conclusiones 
  - Entrevistas a profundidad & conclusiones
  - Usuarios (User Persona) 
  
  **PokeFan - Definición del producto**  
  - Necesidades de usuario
-- Objetivos del producto
-- Mapa de flujo :mute:
-- Wireflames ( Prototipo de baja y alta fidelidad)
+ - Wireflames ( Prototipo de baja y alta fidelidad)
 
  **PokeFan - Desarrollo de Interfaz UI, Testeos de Usuario e Iteraciones** 
 
@@ -47,7 +45,7 @@ Por otro lado, hemos logrado identificar algunos posibles perfiles de usuarios, 
 
 
 
-**Encuesta explorativa de usuario**
+## *Encuesta explorativa de usuario**
 Objetivo: Identificar los tipos de usuarios de POKÉMON GO
 Encuesta: PokeFan Exploración Inicial 
 Muestra: 30 encuestados
@@ -94,14 +92,14 @@ Usamos la siguiente pregunta filtro para corroborar que las respuestas efectivam
  - Por otro lado, son personas mayores de 20 a 36 años, que han sido los niños que crecieron viendo Pokémon.
  - Las actividades que más realizan son: caminar, ir a plazas o parques,tienen una rutina de juego; es decir, van a pokeparadas, gimnasios, capturan pokemones, realizan misiones.
 
- **Entrevistas a profundidad** 
+ ##**Entrevistas a profundidad** 
  
  Objetivo:
  
 :white_check_mark: Conocer cuál es la información más importante para este tipo de usuario.
 :white_check_mark: Conocer qué información buscaría este tipo de usuario.
 :white_check_mark: Identificar cuáles son las características más importantes/relevantes de un pokémon.
-Muestra:  4 entrevistas a jugadores identificados como "entrenadores pokémon".
+ Muestra:  4 entrevistas a jugadores identificados como "entrenadores pokémon".
 
 Hallazgos: 
 ![enter image description here](https://lh3.googleusercontent.com/OlJid74idHxU1BRx8zjQncD-gH_lilznNIi7a7o2h2zNwg9yPhSDLq7BVRlyZi-AvlLOPxkqWEBv)
@@ -144,29 +142,28 @@ La mayoría opinó, que era mejor ver dicha información en una ventana emergent
 
 
 
- **- Usuario (User persona)**
+##**- Usuario (User persona)**
 ![enter image description here](https://lh3.googleusercontent.com/GR_rBBpolIdM7LquT8YBzeJ54HuppCwBWM6VOCU0ZWQJf5BMOQYqBXjPpRxHZYsa2sewdvyDxkK6)
  
 
 
 
  
- **PokeFan - Definición del producto**
+ ##**PokeFan - Definición del producto**
 
  - Necesidades del usuario
+ 
   1. Como usuaria quiero poder loguearme para acceder al sitio web.
   2. Como usuaria quiero poder ver a todos los pokemones al ingresar a la página para saber cuántos tengo y cuántos me faltan atrapar.
   3. Como usuaria quiero poder elegir un Pokémon para ver sus características más relevantes.
   4. Como usuaria quiero poder ordenar por orden alfabético (A-Z y Z-A) y frecuencia de aparición (_spawn_) de manera ascendente (menor
-    a mayor) o descendente (mayor a menor) a los pokemones para poder
-    ubicarlos fácilmente y saber cuáles son los más difíciles de
+    a mayor) o descendente (mayor a menor) a los pokemones para poder ubicarlos fácilmente y saber cuáles son los más difíciles de
     atrapar.
-    5. Como usuaria quiero poder filtrar a los pokemones por tipo y debilidades para saber quiénes y cuántos son de cada tipo y tienen
+  5. Como usuaria quiero poder filtrar a los pokemones por tipo y debilidades para saber quiénes y cuántos son de cada tipo y tienen
     esa debilidad.
-    6. Como usuaria quiero poder obtener el porcentaje de los pokemones que aparecen en los diferentes tipos de huevo para saber qué huevos    eclosionar.
+  6. Como usuaria quiero poder obtener el porcentaje de los pokemones que aparecen en los diferentes tipos de huevo para saber qué huevos    eclosionar.
 
-
- **- Wireframes - Prototipado** 
+ ##**- Wireframes - Prototipado** 
 
 **Prototipo de Baja fidelidad**
 Después de login, el usuario podrá ver todos los pokemones y los filtros con los que podrá hacer una mejor búsqueda.
