@@ -141,3 +141,9 @@ La mayoría opinó, que era mejor ver dicha información en una ventana emergent
   - Por otro lado, todos declaran jugar por más de 6 meses consecutivos, incluso hay 1 persona que juega desde que salió la app  y otra,     que jugaba que también lo hacía, lo dejo porque no tenía  un equipo    celular ideal para juego y ha vuelto a descargar la app  hace     más de 8 meses.   
  - Podemos concluir que el usuario de POKEMON GO, es cautivo, es fiel, está comprometido con el juego, usa paquete de datos móviles,
    tiene    un smartphone y valora la calidad de las gráficas.
+
+
+
+ **- Usuario (User persona)**
+ 
+![enter image description here](https://lh3.googleusercontent.com/jJIx3r_MffwsMJxXWFzLSgvqSxYn_huktXURdktguagEF2FU2_lOXviX--dQx0AML_W-tw8M_6CS)
