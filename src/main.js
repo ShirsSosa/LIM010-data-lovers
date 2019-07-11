@@ -60,9 +60,6 @@ sortNumSpawn.addEventListener('change', () => {
 });
 //mostrar mi pokemones en el modal
 todosPokemones.addEventListener('click', () => { //crear un evento en base a click en cada poke
-    /*const targetPokemones = (pokemon) => {
-        for (let i = 0; i < pokemon.length; i++) {
-    const pokemoncito = poke.map((x) => {return x.id; }).indexOf(`${pokemon[i].id}`);;*/
     const pokemo = parseInt(event.target.parentElement.id);
     const pokemoncito = poke.map(function (x) { return x.id; }).indexOf(pokemo);
     if (event.target.parentElement.getAttribute('name') === 'pokemon') {
@@ -71,7 +68,10 @@ todosPokemones.addEventListener('click', () => { //crear un evento en base a cli
         //insertando info-poke en modal
         document.getElementById('')
         document.getElementById('info-de-poke').innerHTML = `
+        ${POKEMON.pokemon[pokemoncito]["pre_evolution"]} ? <> : ''
     <img class="imagenModal" src="${POKEMON.pokemon[pokemoncito].img}"/>
+
+    <img class="imagenModal" src="${namePoke(POKEMON.pokemon, POKEMON.pokemon[pokemoncito]["next_evolution"][0].name)}"/>
     <p class='nombrePokemoncito'> ${POKEMON.pokemon[pokemoncito].name}</p>
     <div>
       <div>
@@ -81,6 +81,7 @@ todosPokemones.addEventListener('click', () => { //crear un evento en base a cli
       <p>Tipo: ${POKEMON.pokemon[pokemoncito].type}</p> 
       <p>Huevo: ${POKEMON.pokemon[pokemoncito].egg}</p>
       <p>Debilidades: ${POKEMON.pokemon[pokemoncito].weaknesses}</p>
+
     </div>`;
     }
     contador.classList.add('hide');

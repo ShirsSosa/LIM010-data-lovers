@@ -90,3 +90,10 @@ function move() {
     }
   }
 }
+
+const namePoke = (array, condition) => {
+  const newArr = array.filter(caracter => caracter.name === condition);
+  return newArr[0].img
+};
+
+window.namePoke = namePoke;
