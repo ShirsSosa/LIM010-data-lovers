@@ -27,13 +27,13 @@ body{
 }
 @media(max-width: 768px) {
     .inicio-sesion {
-        background-image: url(./media/fondo_inicio_sesion_mobile.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
-        display: table-row;
-    }
+    background-image: url(./media/fondo_inicio_sesion_mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: table-row;
+}
 }
 .logoheader {
     width: 244px;
@@ -58,10 +58,10 @@ body{
     height: 480px;
 }
 @media(max-width: 768px) {
-    .formulario-inicio-sesion {
-        margin: 0px;
-        display: block;
-        height: 943px;
+.formulario-inicio-sesion {
+    margin: 0px;
+    display: block;
+    height: 943px;
     }
 }
 .formulario-inicio-sesion input,
