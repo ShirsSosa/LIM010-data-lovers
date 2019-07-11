@@ -145,5 +145,45 @@ La mayoría opinó, que era mejor ver dicha información en una ventana emergent
 
 
  **- Usuario (User persona)**
+![enter image description here](https://lh3.googleusercontent.com/GR_rBBpolIdM7LquT8YBzeJ54HuppCwBWM6VOCU0ZWQJf5BMOQYqBXjPpRxHZYsa2sewdvyDxkK6)
  
-![enter image description here](https://lh3.googleusercontent.com/jJIx3r_MffwsMJxXWFzLSgvqSxYn_huktXURdktguagEF2FU2_lOXviX--dQx0AML_W-tw8M_6CS)
+
+
+
+ 
+ **PokeFan - Definición del producto**
+
+ - Necesidades del usuario
+  1. Como usuaria quiero poder loguearme para acceder al sitio web.
+  2. Como usuaria quiero poder ver a todos los pokemones al ingresar a la página para saber cuántos tengo y cuántos me faltan atrapar.
+  3. Como usuaria quiero poder elegir un Pokémon para ver sus características más relevantes.
+  4. Como usuaria quiero poder ordenar por orden alfabético (A-Z y Z-A) y frecuencia de aparición (_spawn_) de manera ascendente (menor
+    a mayor) o descendente (mayor a menor) a los pokemones para poder
+    ubicarlos fácilmente y saber cuáles son los más difíciles de
+    atrapar.
+    5. Como usuaria quiero poder filtrar a los pokemones por tipo y debilidades para saber quiénes y cuántos son de cada tipo y tienen
+    esa debilidad.
+    6. Como usuaria quiero poder obtener el porcentaje de los pokemones que aparecen en los diferentes tipos de huevo para saber qué huevos    eclosionar.
+
+
+ **- Wireframes - Prototipado** 
+
+**Prototipo de Baja fidelidad**
+Después de login, el usuario podrá ver todos los pokemones y los filtros con los que podrá hacer una mejor búsqueda.
+
+
+
+**Pantalla principal:**
+Pantalla después de logueo. El usuario podrá visualizar los 151 Pokémon de la región de Kanto.
+
+![enter image description here](https://lh3.googleusercontent.com/LPojFQh-lFyuHGoslo2ih8UX2NSd9r5Fy7Rt4X7H_GBAQ6PbGY-ajC_1h7_axrtpzmbvWQaLUe6A "Pantalla principal")
+
+Cuando le damos click en el Pokémon, abre un modal donde se visualiza mayor información del Pokémon elegido.
+
+![enter image description here](https://lh3.googleusercontent.com/3VFl9ZRNwdil7yBrCv91rFkt5nM6gwtZHT10Ac1dJw9xWMIq7d4rqcVXfvFCY2h-rckL_hLzGdDb)
+ - Feedback
+ 
+:white_check_mark: De parte de las coach recibimos la indicación de hacer un header diferenciado porque para este proyecto no era recomendable colocar los filtros en el header.
+:white_check_mark: Usar un solo color de fondo para los contenedores de los pokémones.
+
+**Prototipo de Alta fidelidad**
