@@ -163,14 +163,14 @@ La mayoría opinó, que era mejor ver dicha información en una ventana emergent
     esa debilidad.
   6. Como usuaria quiero poder obtener el porcentaje de los pokemones que aparecen en los diferentes tipos de huevo para saber qué huevos    eclosionar.
 
- ##**- Wireframes - Prototipado** 
+ ##**-Wireframes - Prototipado** 
 
 **Prototipo de Baja fidelidad**
 Después de login, el usuario podrá ver todos los pokemones y los filtros con los que podrá hacer una mejor búsqueda.
 
 
 
-**Pantalla principal:**
+**Pantalla principal**
 Pantalla después de logueo. El usuario podrá visualizar los 151 Pokémon de la región de Kanto.
 
 ![enter image description here](https://lh3.googleusercontent.com/LPojFQh-lFyuHGoslo2ih8UX2NSd9r5Fy7Rt4X7H_GBAQ6PbGY-ajC_1h7_axrtpzmbvWQaLUe6A "Pantalla principal")
@@ -181,6 +181,7 @@ Cuando le damos click en el Pokémon, abre un modal donde se visualiza mayor inf
  - Feedback
  
 :white_check_mark: De parte de las coach recibimos la indicación de hacer un header diferenciado porque para este proyecto no era recomendable colocar los filtros en el header.
+
 :white_check_mark: Usar un solo color de fondo para los contenedores de los pokémones.
 
 **Prototipo de Alta fidelidad**
