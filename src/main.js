@@ -68,21 +68,23 @@ todosPokemones.addEventListener('click', () => { //crear un evento en base a cli
         //insertando info-poke en modal
         document.getElementById('')
         document.getElementById('info-de-poke').innerHTML = `
-        ${POKEMON.pokemon[pokemoncito]["pre_evolution"]} ? <> : ''
-    <img class="imagenModal" src="${POKEMON.pokemon[pokemoncito].img}"/>
-
-    <img class="imagenModal" src="${namePoke(POKEMON.pokemon, POKEMON.pokemon[pokemoncito]["next_evolution"][0].name)}"/>
-    <p class='nombrePokemoncito'> ${POKEMON.pokemon[pokemoncito].name}</p>
-    <div>
-      <div>
-        <p>Peso: ${POKEMON.pokemon[pokemoncito].weight}</p> 
-        <p>Altura: ${POKEMON.pokemon[pokemoncito].height}</p>
-      </div>    
-      <p>Tipo: ${POKEMON.pokemon[pokemoncito].type}</p> 
-      <p>Huevo: ${POKEMON.pokemon[pokemoncito].egg}</p>
-      <p>Debilidades: ${POKEMON.pokemon[pokemoncito].weaknesses}</p>
-
-    </div>`;
+        <div>    
+          <img class="imagenModal" src="${POKEMON.pokemon[pokemoncito].img}"/>
+          <p class='nombrePokemoncito'> ${POKEMON.pokemon[pokemoncito].name}</p>
+        </div>
+        <div>
+          <div>
+            <p>Peso: ${POKEMON.pokemon[pokemoncito].weight}</p> 
+            <p>Altura: ${POKEMON.pokemon[pokemoncito].height}</p>
+          </div>
+          </div>    
+            <p>Tipo: ${POKEMON.pokemon[pokemoncito].type}</p> 
+            <p>Huevo: ${POKEMON.pokemon[pokemoncito].egg}</p>
+          </div>
+          <div>
+            <p>Debilidades: ${POKEMON.pokemon[pokemoncito].weaknesses}</p>
+          <div>
+        </div>`;
     }
     contador.classList.add('hide');
 });
@@ -272,12 +274,4 @@ buttonSearch.addEventListener('click', () => {
     contador.classList.add('hide');
     todosPokemones.innerHTML = stringSearch;
 });
-pokedex.addEventListener('change', () => {
-    const pokeDex = document.getElementById('pokedex').value;
-    let vacio = '';
-    let arrar = [];
-    arrar = miPoke(poke, pokeDex);
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
-});
+
