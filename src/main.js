@@ -34,9 +34,9 @@ const dataPokemones = (pokemon) => {
     for (let i = 0; i < pokemon.length; i++) {
         let llamar = `
          <div class='mostrar' name='pokemon' id=${pokemon[i].id}>
-         <h1>${pokemon[i].name}</h1> 
-         <img src='${pokemon[i].img}'/>
-         <h2>${pokemon[i].num}</h2>
+         <h1 class='textData'>${pokemon[i].name}</h1> 
+         <img class='imagenData' src='${pokemon[i].img}'/>
+         <h2 class='textData'>${pokemon[i].num}</h2>
          </div>`;
         mostrar += llamar;
     }
@@ -68,10 +68,7 @@ todosPokemones.addEventListener('click', () => { //crear un evento en base a cli
         //insertando info-poke en modal
         document.getElementById('')
         document.getElementById('info-de-poke').innerHTML = `
-        ${POKEMON.pokemon[pokemoncito]["pre_evolution"]} ? <> : ''
     <img class="imagenModal" src="${POKEMON.pokemon[pokemoncito].img}"/>
-
-    <img class="imagenModal" src="${namePoke(POKEMON.pokemon, POKEMON.pokemon[pokemoncito]["next_evolution"][0].name)}"/>
     <p class='nombrePokemoncito'> ${POKEMON.pokemon[pokemoncito].name}</p>
     <div>
       <div>
@@ -271,4 +268,13 @@ buttonSearch.addEventListener('click', () => {
     }
     contador.classList.add('hide');
     todosPokemones.innerHTML = stringSearch;
+});
+pokedex.addEventListener('change', () => {
+    const pokeDex = document.getElementById('pokedex').value;
+    let vacio = '';
+    let arrar = [];
+    arrar = miPoke(poke, pokeDex);
+    vacio = dataPokemones(arrar);
+    contador.classList.add('hide');
+    todosPokemones.innerHTML = vacio;
 });

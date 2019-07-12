@@ -7,9 +7,10 @@
   <!--es para colocar el icono de la pokebola -->
   <title>PokeFan GO</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./media/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato%7CRoboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
 </head>
 
 <body>
@@ -19,11 +20,10 @@
       <div class="search-container">
         <form class="search-form" action="/action_page.php">
           <input type="text" id="poke-nombre" placeholder="Buscar..." name="search">
-          <button type="button" id="button-search" ><i class="fa fa-search"></i></button>
+          <button type="button" id="button-search"><i class="fa fa-search"></i></button>
         </form>
       </div>
-      <a href="https://www.pokemongo.com/es-es/">Pokemon GO</a>
-      <a class="active" href="#pantalla-principal">Home</a>
+      <a class="active" href="https://www.pokemongo.com/es-es/">Pokemon GO</a>
     </div>
   </header>
   <main>
@@ -85,11 +85,6 @@
             <option value="5 km">5km</option>
             <option value="10 km">10km</option>
           </select>
-          <select name="" id="pokedex" class="filtrosDiseño">
-              <option value disabled selected>POKEDEX</option>
-              <option value="null">Mis pokemones</option>
-              <option value="0">Los que me faltan por atrapar</option>
-            </select>
         </div>
         <div class="tipos-pokemon">
           <button id="agua" class="agua">
@@ -160,15 +155,11 @@
       <div id="my-modal" class="modal hide">
         <!-- Modal content -->
         <div class="modal-content">
-            <div id="myProgress">
-                <div id="myBar"></div>
-              </div>
           <span id="close" class="close">&times;</span>
           <div id="info-de-poke" class="info"></div>
         </div>
       </div>
       </div>
-      <a href="#pantalla-principal" class="upbtn"> <i class="fas fa-arrow-up"> </i> </a>
     </section>
   </main>
   <footer class="footer hide" id="footer">
@@ -178,4 +169,5 @@
   <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
