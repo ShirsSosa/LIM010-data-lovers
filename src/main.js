@@ -69,8 +69,7 @@ todosPokemones.addEventListener('click', () => { //crear un evento en base a cli
         document.getElementById('')
         document.getElementById('info-de-poke').innerHTML = `
     <img class="imagenModal" src="${POKEMON.pokemon[pokemoncito].img}"/>
-    <p class='namePokemones'> ${POKEMON.pokemon[pokemoncito].name}</p>
-    <p class='barra'></p>
+    <p class='nombrePokemoncito'> ${POKEMON.pokemon[pokemoncito].name}</p>
     <div>
       <div>
         <p>Peso: ${POKEMON.pokemon[pokemoncito].weight}</p> 
@@ -269,4 +268,13 @@ buttonSearch.addEventListener('click', () => {
     }
     contador.classList.add('hide');
     todosPokemones.innerHTML = stringSearch;
+});
+pokedex.addEventListener('change', () => {
+    const pokeDex = document.getElementById('pokedex').value;
+    let vacio = '';
+    let arrar = [];
+    arrar = miPoke(poke, pokeDex);
+    vacio = dataPokemones(arrar);
+    contador.classList.add('hide');
+    todosPokemones.innerHTML = vacio;
 });
