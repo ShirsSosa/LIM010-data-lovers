@@ -72,10 +72,6 @@ const searchPoke = (array, condition) => {
 };
 window.searchPoke = searchPoke;
 //Filtrando por los que tengo y no tengo
-const miPoke = (array, condition) => {
-  return array.filter(caracter => caracter.multipliers[null] === condition || caracter.multipliers[1] === condition);
-};
-window.miPoke = miPoke;
 
 function move() {
   var elem = document.getElementById("myBar"); 
@@ -95,5 +91,4 @@ const namePoke = (array, condition) => {
   const newArr = array.filter(caracter => caracter.name === condition);
   return newArr[0].img
 };
-
 window.namePoke = namePoke;
