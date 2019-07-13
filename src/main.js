@@ -36,6 +36,7 @@ const dataPokemones = (pokemon) => {
          <h1 class="tex-data">${pokemon[i].name}</h1> 
          <img class="img-data" src='${pokemon[i].img}'/>
          <h2 class="text-data">${pokemon[i].num}</h2>
+
          </div>`;
     show += call;
   }
@@ -57,6 +58,7 @@ sortNumSpawn.addEventListener('change', () => {
   counterPokemones.classList.add('hide');
   allPokemones.innerHTML = dataPokemones(orderPokemones);
 });
+
 // show mi pokemones en el modal
 allPokemones.addEventListener('click', () => { // crear un evento en base a click en cada poke
   const eventIdPokemon = parseInt(event.target.parentElement.id);
@@ -261,3 +263,14 @@ buttonSearch.addEventListener('click', () => {
   counterPokemones.classList.add('hide');
   allPokemones.innerHTML = stringSearch;
 });
+
+pokedex.addEventListener('change', () => {
+  const pokeDex = document.getElementById('pokedex').value;
+  let vacio = '';
+  let arrar = [];
+  arrar = miPoke(poke, pokeDex);
+  vacio = dataPokemones(arrar);
+  contador.classList.add('hide');
+  todosPokemones.innerHTML = vacio;
+});
+
