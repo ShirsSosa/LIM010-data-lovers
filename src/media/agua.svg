@@ -3,13 +3,16 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st0{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:#020202;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
 </style>
+<rect class="st0" width="80" height="80"/>
 <g>
-	<path class="st0" d="M40.62,9.36C57.42,9.36,71,22.94,71,39.7c0,16.8-13.58,30.38-30.38,30.38c-16.76,0-30.34-13.58-30.34-30.38
-		C10.28,22.94,23.86,9.36,40.62,9.36L40.62,9.36z"/>
-	<path class="st0" d="M53.17,20.53c-5.7,0.73-11.63,3.18-16.49,6.66C19.8,39.28,25.43,58.95,42.53,56.92
-		c7.23-0.84,11.25-6.54,11.1-12.21c-0.08-2.98-1.26-5.24-3.79-8.3c-4.55-5.43-1.72-11.52,3.94-14.65
-		C55.43,20.84,54.89,20.3,53.17,20.53L53.17,20.53z"/>
+	<path class="st1" d="M40.85,8c17.54,0,31.72,14.28,31.72,31.91c0,17.66-14.18,31.95-31.72,31.95c-17.5,0-31.68-14.28-31.68-31.95
+		C9.17,22.28,23.35,8,40.85,8L40.85,8z"/>
+	<path class="st2" d="M53.95,19.75c-5.95,0.76-12.15,3.34-17.22,7c-17.62,12.72-11.75,33.4,6.11,31.26
+		c7.55-0.89,11.75-6.88,11.59-12.84c-0.08-3.14-1.32-5.51-3.96-8.73c-4.75-5.71-1.8-12.11,4.11-15.41
+		C56.31,20.07,55.75,19.51,53.95,19.75L53.95,19.75z"/>
 </g>
 </svg>

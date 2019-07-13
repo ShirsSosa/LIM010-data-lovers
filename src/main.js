@@ -1,274 +1,263 @@
-const contrasenaCorrecta = 'LABORATORIA';
-const usuarioCorrecto = 'LABORATORIA';
-const inicioSesion = document.getElementById('inicio-sesion');
-const usuario = document.getElementById('usuario');
-const contrasena = document.getElementById('contrasena');
-const ingresa = document.getElementById('btt-ingresa');
-const mostrarHeader = document.getElementById('header');
-const mostrarFooter = document.getElementById('footer');
-const listaDePokemones = document.getElementById('pantalla-principal');//en la segunda pantalla, despues e login
-const poke = POKEMON.pokemon; //array
-const todosPokemones = document.getElementById('mostrar-pokemones');//contenedor de pokemones
+const passwordTrue = 'LABORATORIA';
+const userTrue = 'LABORATORIA';
+const login = document.getElementById('login');
+const user = document.getElementById('user');
+const password = document.getElementById('password');
+const bttEnter = document.getElementById('btt-enter');
+const header = document.getElementById('header');
+const footer = document.getElementById('footer');
+const mainScreen = document.getElementById('main-screen');// pantalla principal donde se visualizan los 151 pokemones
+const poke = POKEMON.pokemon; // array de la data POKEMON.pokemon
+const allPokemones = document.getElementById('show-pokemones');// contenedor de los 151 pokemones
 const close = document.getElementById('close');
-const contador = document.getElementById('contador-poke');
-
-let nroIntentos = 0;
-const validar = () => {
-    if (contrasena.value === contrasenaCorrecta && usuario.value === usuarioCorrecto) {
-        inicioSesion.classList.add('hide');
-        listaDePokemones.classList.remove('hide');
-        mostrarHeader.classList.remove('hide');
-        mostrarFooter.classList.remove('hide');
-        event.preventDefault();
-    } else {
-        if (nroIntentos < 1) {
-            contrasena.value = '';
-            nroIntentos++;
-        }
+const counterPokemones = document.getElementById('counter-pokemones');
+let numberOfAttemps = 0;
+const validate = () => {
+  if (password.value === passwordTrue && user.value === userTrue) {
+    login.classList.add('hide');
+    mainScreen.classList.remove('hide');
+    header.classList.remove('hide');
+    footer.classList.remove('hide');
+    event.preventDefault();
+  } else {
+    if (numberOfAttemps < 1) {
+      password.value = '';
+      numberOfAttemps++;
     }
+  }
 };
-ingresa.addEventListener('click', validar);
+bttEnter.addEventListener('click', validate);
 /* pprincipal: Con esta funcion ya tengo  el nombre y la imagen de todos mis pokemones en div*/
 const dataPokemones = (pokemon) => {
-    let mostrar = ' ';
-    for (let i = 0; i < pokemon.length; i++) {
-        let llamar = `
-         <div class='mostrar' name='pokemon' id=${pokemon[i].id}>
-         <h1>${pokemon[i].name}</h1> 
-         <img src='${pokemon[i].img}'/>
-         <h2>${pokemon[i].num}</h2>
+  let show = ' ';
+  for (let i = 0; i < pokemon.length; i++) {
+    let call = `
+         <div class="show" name="pokemon" id=${pokemon[i].id}>
+         <h1 class="tex-data">${pokemon[i].name}</h1> 
+         <img class="img-data" src='${pokemon[i].img}'/>
+         <h2 class="text-data">${pokemon[i].num}</h2>
          </div>`;
-        mostrar += llamar;
-    }
-    return mostrar;
+    show += call;
+  }
+  return show;
 };
-contador.classList.add('hide');
-todosPokemones.innerHTML = dataPokemones(poke);
-//Función para ordenar de la ordenar alfabeticamente
-const sortAbc = document.getElementById('filtrado-az');
+counterPokemones.classList.add('hide');
+allPokemones.innerHTML = dataPokemones(poke);
+// Función para ordenar de la ordenar alfabeticamente
+const sortAbc = document.getElementById('filter-az');
 sortAbc.addEventListener('change', () => {
-    const pokeOrden = sortAZ(poke, sortAbc.value);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = dataPokemones(pokeOrden);
+  const orderPokemones = sortAZ(poke, sortAbc.value);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = dataPokemones(orderPokemones);
 });
-//Función para ordenar de la ordenar por spawn
-const sortNumSpawn = document.getElementById('filtrado-spawn');
+// Función para ordenar de la ordenar por spawn
+const sortNumSpawn = document.getElementById('filter-spawn');
 sortNumSpawn.addEventListener('change', () => {
-    const pokeOrden = sortSpawn(poke, sortNumSpawn.value);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = dataPokemones(pokeOrden);
+  const orderPokemones = sortSpawn(poke, sortNumSpawn.value);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = dataPokemones(orderPokemones);
 });
-//mostrar mi pokemones en el modal
-todosPokemones.addEventListener('click', () => { //crear un evento en base a click en cada poke
-    const pokemo = parseInt(event.target.parentElement.id);
-    const pokemoncito = poke.map(function (x) { return x.id; }).indexOf(pokemo);
-    if (event.target.parentElement.getAttribute('name') === 'pokemon') {
-        //mostrando modal 
-        document.getElementById('my-modal').classList.remove('hide');
-        //insertando info-poke en modal
-        document.getElementById('')
-        document.getElementById('info-de-poke').innerHTML = `
-        ${POKEMON.pokemon[pokemoncito]["pre_evolution"]} ? <> : ''
-    <img class="imagenModal" src="${POKEMON.pokemon[pokemoncito].img}"/>
-
-    <img class="imagenModal" src="${namePoke(POKEMON.pokemon, POKEMON.pokemon[pokemoncito]["next_evolution"][0].name)}"/>
-    <p class='nombrePokemoncito'> ${POKEMON.pokemon[pokemoncito].name}</p>
+// show mi pokemones en el modal
+allPokemones.addEventListener('click', () => { // crear un evento en base a click en cada poke
+  const eventIdPokemon = parseInt(event.target.parentElement.id);
+  const arrayPokemon = poke.map(function(x) {
+    return x.id; 
+  }).indexOf(eventIdPokemon);
+  if (event.target.parentElement.getAttribute('name') === 'pokemon') {
+  // mostrando modal 
+    document.getElementById('my-modal').classList.remove('hide');
+    // insertando info-poke en modal
+    document.getElementById('');
+    document.getElementById('info-pokemones').innerHTML = `
+    <img class="img-modal" src="${POKEMON.pokemon[arrayPokemon].img}"/>
+    <p class="name-Pokemones"> ${POKEMON.pokemon[arrayPokemon].name}</p>
+    <p class="bar"></p>
     <div>
       <div>
-        <p>Peso: ${POKEMON.pokemon[pokemoncito].weight}</p> 
-        <p>Altura: ${POKEMON.pokemon[pokemoncito].height}</p>
+        <p>Peso: ${POKEMON.pokemon[arrayPokemon].weight}</p> 
+        <p>Altura: ${POKEMON.pokemon[arrayPokemon].height}</p>
       </div>    
-      <p>Tipo: ${POKEMON.pokemon[pokemoncito].type}</p> 
-      <p>Huevo: ${POKEMON.pokemon[pokemoncito].egg}</p>
-      <p>Debilidades: ${POKEMON.pokemon[pokemoncito].weaknesses}</p>
-
+      <p>Tipo: ${POKEMON.pokemon[arrayPokemon].type}</p> 
+      <p>Huevo: ${POKEMON.pokemon[arrayPokemon].egg}</p>
+      <p>Debilidades: ${POKEMON.pokemon[arrayPokemon].weaknesses}</p>
     </div>`;
-    }
-    contador.classList.add('hide');
+  }
+  counterPokemones.classList.add('hide');
 });
-
-//cerrando modal (funcion)
+// cerrando modal (funcion)
 close.addEventListener('click', () => {
-    document.getElementById('my-modal').classList.add('hide');
-    contador.classList.add('hide');
+  document.getElementById('my-modal').classList.add('hide');
+  counterPokemones.classList.add('hide');
 });
-//Filtrar por tipo
-const agua = document.getElementById('agua');
-agua.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Water');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+// Filtrar por tipo
+const water = document.getElementById('water');
+water.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Water');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const fuego = document.getElementById('fuego');
-fuego.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Fire');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const fire = document.getElementById('fire');
+fire.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Fire');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const planta = document.getElementById('planta');
-planta.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Grass');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const grass = document.getElementById('grass');
+grass.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Grass');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const roca = document.getElementById('roca');
-roca.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Rock');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const rock = document.getElementById('rock');
+rock.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Rock');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const tierra = document.getElementById('tierra');
-tierra.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Ground');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const ground = document.getElementById('ground');
+ground.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Ground');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const aire = document.getElementById('aire');
-aire.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Flying');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const flying = document.getElementById('flying');
+flying.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Flying');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
 const dragon = document.getElementById('dragon');
 dragon.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Dragon');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Dragon');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const electrico = document.getElementById('electrico');
-electrico.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Electric');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const electric = document.getElementById('electric');
+electric.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Electric');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const fantasma = document.getElementById('fantasma');
-fantasma.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Ghost');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const ghost = document.getElementById('ghost');
+ghost.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Ghost');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const hielo = document.getElementById('hielo');
-hielo.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Ice');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const ice = document.getElementById('ice');
+ice.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Ice');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const insecto = document.getElementById('insecto');
-insecto.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Bug');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const bug = document.getElementById('bug');
+bug.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Bug');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const lucha = document.getElementById('lucha');
-lucha.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Fighting');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const fighting = document.getElementById('fighting');
+fighting.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Fighting');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
 const normal = document.getElementById('normal');
 normal.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Normal');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Normal');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const psiquico = document.getElementById('psiquico');
-psiquico.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Psychic');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const sychic = document.getElementById('psychic');
+sychic.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Psychic');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-const veneno = document.getElementById('veneno');
-veneno.addEventListener('click', () => {
-    let vacio = '';
-    let arrar = [];
-    arrar = tipoPoke(poke, 'Poison');
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+const poison = document.getElementById('poison');
+poison.addEventListener('click', () => {
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = typesPokemones(poke, 'Poison');
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-/*tipopoke.addEventListener('change',() => {
-    const anis = document.getElementById('tipopoke').value;
-    let aguita = '';
-    let arrar = [];
-    arrar = tipoPoke(poke,anis);
-    aguita = dataPokemones(arrar);
-    todosPokemones.innerHTML = aguita;
-});*/
-//Filtro por huevo
-filtrohuevo.addEventListener('change', () => {
-    const egg = document.getElementById('filtrohuevo').value;
-    todosPokemones.innerHTML = dataPokemones(huevoPoke(poke, egg));
-    //mostrando porcentaje de los 151
-    const contadoPoke = (huevoPoke(poke, egg).length) * 1.51;
-    contador.classList.remove('hide');
-    contador.innerHTML = contadoPoke;
+// Filtro por huevo
+filtere.addEventListener('change', () => {
+  const egg = document.getElementById('filtere').value;
+  allPokemones.innerHTML = dataPokemones(eegPokemones(poke, egg));
+  // mostrando porcentaje de los 151
+  const counterPokemonesEgg = (eegPokemones(poke, egg).length) * 1.51;
+  counterPokemones.classList.remove('hide');
+  counterPokemones.innerHTML = counterPokemonesEgg;
 });
-//filtro por debilidad en select
-debilidad.addEventListener('change', () => {
-    const debTipo = document.getElementById('debilidad').value;
-    let vacio = '';
-    let arrar = [];
-    arrar = debilidadPoke(poke, debTipo);
-    vacio = dataPokemones(arrar);
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = vacio;
+// filtro por debilidad en select
+weakness.addEventListener('change', () => {
+  const typeWeakness = document.getElementById('weakness').value;
+  let empty = '';
+  let arrarEmpty = [];
+  arrarEmpty = weaknessPokemones(poke, typeWeakness);
+  empty = dataPokemones(arrarEmpty);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = empty;
 });
-//Filtro para buscar por nombre
+// Filtro para buscar por nombre
 const buttonSearch = document.getElementById('button-search');
 let pokeSearch = '';
 buttonSearch.addEventListener('click', () => {
-    const pokeNombre = document.getElementById('poke-nombre').value;
-    pokeSearch = window.searchPoke(poke, pokeNombre);
-    let stringSearch = '';
-    for (let i = 0; i < pokeSearch.length; i++) {
-        stringSearch += `<div class="mostrar" id=${pokeSearch[i].name}>
+  const pokeName = document.getElementById('poke-name').value;
+  pokeSearch = window.searchPoke(poke, pokeName);
+  let stringSearch = '';
+  for (let i = 0; i < pokeSearch.length; i++) {
+    stringSearch += `<div class="show" id=${pokeSearch[i].name}>
     <h1>${pokeSearch[i].name}</h1> 
     <img src='${pokeSearch[i].img}'/>
     <h2>${pokeSearch[i].num}</h2> 
     </div>`;
-    }
-    contador.classList.add('hide');
-    todosPokemones.innerHTML = stringSearch;
+  }
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = stringSearch;
 });
