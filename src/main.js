@@ -264,13 +264,4 @@ buttonSearch.addEventListener('click', () => {
   allPokemones.innerHTML = stringSearch;
 });
 
-pokedex.addEventListener('change', () => {
-  const pokeDex = document.getElementById('pokedex').value;
-  let vacio = '';
-  let arrar = [];
-  arrar = miPoke(poke, pokeDex);
-  vacio = dataPokemones(arrar);
-  contador.classList.add('hide');
-  todosPokemones.innerHTML = vacio;
-});
 

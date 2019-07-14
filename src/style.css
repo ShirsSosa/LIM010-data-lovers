@@ -139,7 +139,7 @@ body{
   display: flex;
   align-items: center;
   height: 100vh;
-  background-image: url("./media/fondo_inicio_sesion.png");
+  background-image: url("./media/fondo.pokemon.png");
   background-size: cover;
   background-repeat: round;
 }
@@ -196,7 +196,7 @@ margin: 0px 20px;
   font-size: px;
 }
 .main-screen{
-background: #212E4A;
+background-image:url("./media/fondo_pokemon.jpg");
 }
 .register-user{
   text-align: center;

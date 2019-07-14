@@ -11,7 +11,7 @@ const showDataPokemon = (array) => {
   return newArrayDataPokemones;
 };
 window.showDataPokemon = showDataPokemon;
-// Función para ordenar de la AZ
+// Función para ordenar de la A la Z
 const sortAZ = (array, clickOrder) => {
   const sortName = array.sort((aa, bb) => {
     if (aa.name > bb.name) {
@@ -51,7 +51,7 @@ const sortSpawn = (array, clickOrder) => {
   return 0;
 };
 window.sortSpawn = sortSpawn;
-// Filtrando objeto por tipo
+// Filtrando objeto por tipo de pokemon
 const typesPokemones = (array, condition) => {
   return filterTypePokemones = array.filter(caracter => (caracter.type[0] === condition || caracter.type[1] === condition));
 };
@@ -90,3 +90,10 @@ const namePoke = (array, condition) => {
   return newArr[0].img;
 };
 window.namePoke = namePoke;
+window.showDataPokemon = showDataPokemon;
+window.sortAZ = sortAZ;
+window.sortSpawn = sortSpawn;
+window.typesPokemones = typesPokemones;
+window.eegPokemones = eegPokemones; 
+window.weaknessPokemones = weaknessPokemones;
+window.searchPoke = searchPoke;
