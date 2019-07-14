@@ -76,12 +76,13 @@ allPokemones.addEventListener('click', () => { // crear un evento en base a clic
     <p class="bar"></p>
     <div>
       <div>
+        <p>Huevo: ${POKEMON.pokemon[arrayPokemon].egg}</p> 
+        <p>Hora de aparición: ${POKEMON.pokemon[arrayPokemon].spawn_time}</p>        
+      </div>    
+        <p>Tipo: ${POKEMON.pokemon[arrayPokemon].type}</p>       
+        <p>Debilidades: ${POKEMON.pokemon[arrayPokemon].weaknesses}</p>
         <p>Peso: ${POKEMON.pokemon[arrayPokemon].weight}</p> 
         <p>Altura: ${POKEMON.pokemon[arrayPokemon].height}</p>
-      </div>    
-      <p>Tipo: ${POKEMON.pokemon[arrayPokemon].type}</p> 
-      <p>Huevo: ${POKEMON.pokemon[arrayPokemon].egg}</p>
-      <p>Debilidades: ${POKEMON.pokemon[arrayPokemon].weaknesses}</p>
     </div>`;
   }
   counterPokemones.classList.add('hide');

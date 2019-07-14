@@ -71,20 +71,6 @@ const searchPoke = (array, condition) => {
   return array.filter(caracter => caracter.name === condition);
 };
 window.searchPoke = searchPoke;
-// Filtrando por los que tengo y no tengo
-function move() {
-  var elem = document.getElementById('myBar'); 
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 100) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-    }
-  }
-}
 const namePoke = (array, condition) => {
   const newArr = array.filter(caracter => caracter.name === condition);
   return newArr[0].img;
