@@ -57,7 +57,6 @@ sortAbc.addEventListener('change', () => {
 
 // Función para ordenar de la ordenar por spawn
 const sortNumSpawn = document.getElementById('filter-spawn');
-
 sortNumSpawn.addEventListener('change', () => {
   const orderPokemones = sortSpawn(poke, sortNumSpawn.value);
   counterPokemones.classList.add('hide');
@@ -117,7 +116,8 @@ filtere.addEventListener('change', () => {
   counterPokemones.classList.remove('hide');
   counterPokemones.innerHTML = counterPokemonesEgg;
 });
-// filtro por debilidad en select
+
+//Filtro por debilidad en select
 weakness.addEventListener('change', () => {
   const typeWeakness = document.getElementById('weakness').value;
   let empty = '';
@@ -127,7 +127,7 @@ weakness.addEventListener('change', () => {
   counterPokemones.classList.add('hide');
   allPokemones.innerHTML = empty;
 });
-// Filtro para buscar por nombre
+//Filtro para buscar por nombre
 const buttonSearch = document.getElementById('button-search');
 let pokeSearch = '';
 buttonSearch.addEventListener('click', () => {

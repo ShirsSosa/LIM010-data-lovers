@@ -188,10 +188,29 @@ Cuando le damos click en el Pokémon, abre un modal donde se visualiza mayor inf
 
 ## Prototipo de Alta fidelidad
 
-**Pantalla de Login - escritorio**
+**Pantalla de Login - desktop**
 
 ![enter image description here](https://lh3.googleusercontent.com/-wNRpIzwWVXJzYEOADnXYLWh3poNMgkg62-698RtLUjrjR3YlmRMga_x69XY26HiedNAeq86phOl)
 
+**Pantalla principal - desktop**
+
+![enter image description here](https://lh3.googleusercontent.com/reDFxFsSgeK8XvQsKpiSrH2JJyJIZuQ-JBGYFx-dC6P4zwT2Im92sBImvSGmBDHp4FacDbo5yjNy)
+
+**Pantalla principal con modal abierto**
+
+![enter image description here](https://lh3.googleusercontent.com/OMXXt4aGnrBMHjSTxA6v40ix9RwB8FbhS8l9gRQPY3OxHMerWmteoWb1Cj7jwuPS_NBcCW3d9tGW)
+
+**Pantalla login - mobile**
+
+![enter image description here](https://lh3.googleusercontent.com/y_e55RxOJju7-1AkjocfnxGz16T_nUCzauxjzJnQTPerrNbZeB-3tt0Ww9JvgBbMeN4_9IIKI2Rv)
+
+**Pantalla principal - mobile**
+
+![enter image description here](https://lh3.googleusercontent.com/THBrouudJLRdT5IyLZo5RiKmEHz1P6Pw8iO1bubLmUbfpywS-Mb3DaO4SaAH8F0jYBMptIklumkV)
+
+**Pantalla principal con modal abierto -  mobile**
+
+![enter image description here](https://lh3.googleusercontent.com/w6TC_qG_TahP9Zt0UbRYG3WiCiKWIH7glOjjNdOCF-8idVpGwxtvfrLS6dltKXka_dKg1Ys49wK3)
 
 
 
