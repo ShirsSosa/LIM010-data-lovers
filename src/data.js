@@ -16,9 +16,7 @@ const sortAZ = (array, clickOrder) => {
   const sortName = array.sort((aa, bb) => {
     if (aa.name > bb.name) {
       return 1;
-    } 
-    else if (aa.name < bb.name) 
-    {
+    } else if (aa.name < bb.name) {
       return -1;
     }
   });
@@ -28,14 +26,12 @@ const sortAZ = (array, clickOrder) => {
     return sortName.reverse();
   }
 };
-
 // Función para ordenar de por Spawn
 const sortSpawn = (array, clickOrder) => {
   const sortNum = array.sort((aa, bb) => {
     if (aa.spawn_chance > bb.spawn_chance) {
       return 1;
-    } 
-    else if (aa.spawn_chance < bb.spawn_chance) {
+    } else if (aa.spawn_chance < bb.spawn_chance) {
       return -1;
     }
   });
