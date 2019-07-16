@@ -97,16 +97,14 @@ close.addEventListener('click', () => {
   document.getElementById('my-modal').classList.add('hide');
   counterPokemones.classList.add('hide');
 });
-
-//Filtro por tipo
+// Filtro por tipo
 tipoPokemonSeleccionado.addEventListener('click', (event)=>{
-  const tipoSeleccionado =  event.target.alt;
+  const tipoSeleccionado = event.target.alt;
   const arrPokemonPorTipo = typesPokemones(poke, tipoSeleccionado);
   const string = dataPokemones(arrPokemonPorTipo);
   counterPokemones.classList.add('hide');
   allPokemones.innerHTML = string;
 }); 
-
 // Filtro por huevo
 filtere.addEventListener('change', () => {
   const egg = document.getElementById('filtere').value;
@@ -116,8 +114,7 @@ filtere.addEventListener('change', () => {
   counterPokemones.classList.remove('hide');
   counterPokemones.innerHTML = counterPokemonesEgg;
 });
-
-//Filtro por debilidad en select
+// Filtro por debilidad en select
 weakness.addEventListener('change', () => {
   const typeWeakness = document.getElementById('weakness').value;
   let empty = '';
@@ -127,7 +124,7 @@ weakness.addEventListener('change', () => {
   counterPokemones.classList.add('hide');
   allPokemones.innerHTML = empty;
 });
-//Filtro para buscar por nombre
+// Filtro para buscar por nombre
 const buttonSearch = document.getElementById('button-search');
 let pokeSearch = '';
 buttonSearch.addEventListener('click', () => {
@@ -144,11 +141,9 @@ buttonSearch.addEventListener('click', () => {
   counterPokemones.classList.add('hide');
   allPokemones.innerHTML = stringSearch;
 });
-
 function openNav() {
-  document.getElementById("types-pokemons").style.width = "250px";
+  document.getElementById('types-pokemons').style.width = '250px';
 }
-
 function closeNav() {
-  document.getElementById("types-pokemons").style.width = "0";
+  document.getElementById('types-pokemons').style.width = '0';
 }

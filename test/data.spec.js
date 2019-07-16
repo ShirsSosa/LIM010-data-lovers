@@ -116,4 +116,12 @@ describe(showDataPokemon, () => {
   it('PokeFan debería mostrar los 151 pokemones', () => {
     expect(showDataPokemon(dataPokemons)[0].nombre).toEqual('Venusaur');
   });
-});         
+});
+describe(searchPoke, () => {
+  it('Deberia ser una función', () => {
+    expect(typeof searchPoke).toEqual('function');
+  }); 
+  it('Deberia buscar Venusaur', () => {
+    expect(searchPoke(dataPokemons, 'Venusaur')[0].name).toEqual('Venusaur');
+  });
+});     

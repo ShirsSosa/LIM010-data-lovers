@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
-  <link rel="shortcut icon" href="./media/favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./media/favicon_pokefan.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PokeFan GO - App para entrenadores Pokémon</title>
   <link rel="stylesheet" href="style.css" />
@@ -47,14 +47,20 @@
       <div class="filter-types">
         <div class="filter">
           <select id="filter-az" class="design-filters">
-            <option value disabled selected>Alfabeto</option>
+            <option value disabled selected> Ordena </option>
             <option value="0">A-Z</option>
             <option value="1">Z-A</option>
           </select>
           <select id="filter-spawn" class="design-filters">
-            <option value disabled selected>Spawn</option>
+            <option value disabled selected> Spawn </option>
             <option value="0"> Spawn ascendente</option>
             <option value="1"> Spawn descendente</option>
+          </select>
+          <select id="filtere" class="design-filters">
+            <option value disabled selected> Incubadora </option>
+            <option value="2 km">2km</option>
+            <option value="5 km">5km</option>
+            <option value="10 km">10km</option>
           </select>
           <select id="weakness" class="design-filters">
               <option value disabled selected>Debilidad</option>
@@ -76,35 +82,13 @@
               <option value="Rock" id="rock-w">Roca</option>                          
               <option value="Ground" id="ground-w">Tierra</option> 
               <option value="Poison" id="poison-w">Veneno</option>
-           </select> 
-          <select id="filtere" class="design-filters">
-            <option value disabled selected> Incubadora </option>
-            <option value="2 km">2km</option>
-            <option value="5 km">5km</option>
-            <option value="10 km">10km</option>
-          </select>
+           </select>          
         </div>
         <div id="types-pokemons" class="types-pokemons">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <button id="water" class="water">
             <img src="./media/agua.svg" alt="Water"/>
             <p>Agua</p>
-          </button>
-          <button id="fire" class="fire">
-            <img src="./media/fuego.svg" alt="Fire"/>
-            <p>Fuego</p>
-          </button>
-          <button id="grass" class="grass">
-            <img src="./media/planta.svg" alt="Grass"/>
-            <p>Planta</p>
-          </button>
-          <button id="rock" class="rock">
-            <img src="./media/roca.svg" alt="Rock"/>
-            <p>Roca</p>
-          </button>
-          <button id="ground" class="ground">
-            <img src="./media/tierra.svg" alt="Ground"/>
-            <p>Tierra</p>
           </button>
           <button id="flying" class="flying" >
             <img src="./media/aire.svg" alt="Flying"/>
@@ -114,13 +98,13 @@
             <img src="./media/dragon.svg" alt="Dragon" />
             <p>Dragón</p>
           </button>
-          <button id="electric" class="electric">
-            <img src="./media/eléctrico.svg" alt="Electric"/>
-            <p>Eléctrico</p>
-          </button>
           <button id="ghost" class="ghost">
             <img src="./media/fantasma.svg" alt="Ghost"/>
             <p>Fantasma</p>
+          </button>
+          <button id="fire" class="fire">
+            <img src="./media/fuego.svg" alt="Fire"/>
+            <p>Fuego</p>
           </button>
           <button id="ice" class="ice">
             <img src="./media/hielo.svg" alt="Ice"/>
@@ -129,18 +113,34 @@
           <button id="bug" class="bug">
             <img src="./media/insecto.svg" alt="Bug" />
             <p>Insecto</p>
-          </button>
-          <button id="fighting" class="fighting">
-            <img src="./media/lucha.svg" alt="Fighting" />
-            <p>Lucha</p>
+          </button>          
+          <button id="grass" class="grass">
+            <img src="./media/planta.svg" alt="Grass"/>
+            <p>Planta</p>
+          </button>        
+          <button id="electric" class="electric">
+            <img src="./media/eléctrico.svg" alt="Electric"/>
+            <p>Eléctrico</p>
           </button>
           <button id="normal" class="normal">
             <img src="./media/normal.svg" alt="Normal" />
             <p>Normal</p>
+          </button>           
+          <button id="fighting" class="fighting">
+            <img src="./media/lucha.svg" alt="Fighting" />
+            <p>Lucha</p>
           </button>
           <button id="psychic" class="psychic">
             <img src="./media/psiquico.svg" alt="Psychic" />
             <p>Psíquico</p>
+          </button>
+          <button id="rock" class="rock">
+            <img src="./media/roca.svg" alt="Rock"/>
+            <p>Roca</p>
+          </button>
+          <button id="ground" class="ground">
+            <img src="./media/tierra.svg" alt="Ground"/>
+            <p>Tierra</p>
           </button>
           <button id="poison" class="poison">
             <img src="./media/veneno.svg" alt="Poison" />
@@ -162,10 +162,10 @@
   <footer class="footer hide" id="footer">
     <div class="social-red">
       <a target="_blank" href="https://www.facebook.com/PokemonGO/">
-        <img class="footer-icon1" src="./media/face.jpeg" alt="facebook">
+        <img class="footer-icon1" src="./media/facebook.png" alt="facebook">
       </a>
       <a target="_blank" href="https://www.instagram.com/pokemongoapp/">
-        <img class="footer-icon1" src="./media/instagram.jpeg" alt="instagram">
+        <img class="footer-icon1" src="./media/instagram.png" alt="instagram">
       </a>
     </div>
     <div class="play-store">
