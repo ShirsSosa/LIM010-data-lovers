@@ -48,17 +48,20 @@ const sortSpawn = (array, clickOrder) => {
 
 // Filtrando objeto por tipo de pokemon
 const typesPokemones = (array, condition) => {
-  return filterTypePokemones = array.filter(caracter => (caracter.type[0] === condition || caracter.type[1] === condition));
+  arrayToFilter = filterTypePokemones = array.filter(caracter => (caracter.type[0] === condition || caracter.type[1] === condition));
+  return arrayToFilter;
 };
 
 // Filtrando por huevo
 const eegPokemones = (array, condition) => {
-  return contadorHuevo = array.filter(caracter => caracter.egg === condition);
+  arrayToFilter = contadorHuevo = array.filter(caracter => caracter.egg === condition);
+  return arrayToFilter;
 };
 
 // Filtrando por debilidad
 const weaknessPokemones = (array, condition) => {
-  return filtroweaknessPokemones = array.filter(caracter => (caracter.weaknesses[0] === condition || caracter.weaknesses[1] === condition || caracter.weaknesses[2] === condition || caracter.weaknesses[3] === condition || caracter.weaknesses[4] === condition || caracter.weaknesses[5] === condition || caracter.weaknesses[6] === condition));
+  arrayToFilter = filtroweaknessPokemones = array.filter(caracter => (caracter.weaknesses[0] === condition || caracter.weaknesses[1] === condition || caracter.weaknesses[2] === condition || caracter.weaknesses[3] === condition || caracter.weaknesses[4] === condition || caracter.weaknesses[5] === condition || caracter.weaknesses[6] === condition));
+  return arrayToFilter;
 };
 
 // Filtrando por nombre en buscador
@@ -73,4 +76,3 @@ window.typesPokemones = typesPokemones;
 window.eegPokemones = eegPokemones; 
 window.weaknessPokemones = weaknessPokemones;
 window.searchPoke = searchPoke;
-
