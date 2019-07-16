@@ -13,6 +13,7 @@ const close = document.getElementById('close');
 const counterPokemones = document.getElementById('counter-pokemones');
 let numberOfAttemps = 0;
 const tipoPokemonSeleccionado = document.getElementById('types-pokemons');
+let arrayToFilter = poke;
 
 const validate = () => {
   if (password.value === passwordTrue && user.value === userTrue) {
@@ -46,27 +47,12 @@ const dataPokemones = (pokemon) => {
 
 counterPokemones.classList.add('hide');
 allPokemones.innerHTML = dataPokemones(poke);
-// Función para ordenar de la ordenar alfabeticamente
-const sortAbc = document.getElementById('filter-az');
 
-sortAbc.addEventListener('change', () => {
-  const orderPokemones = sortAZ(poke, sortAbc.value);
-  counterPokemones.classList.add('hide');
-  allPokemones.innerHTML = dataPokemones(orderPokemones);
-});
-
-// Función para ordenar de la ordenar por spawn
-const sortNumSpawn = document.getElementById('filter-spawn');
-sortNumSpawn.addEventListener('change', () => {
-  const orderPokemones = sortSpawn(poke, sortNumSpawn.value);
-  counterPokemones.classList.add('hide');
-  allPokemones.innerHTML = dataPokemones(orderPokemones);
-});
 
 // show mi pokemones en el modal
 allPokemones.addEventListener('click', () => { // crear un evento en base a click en cada poke
   const eventIdPokemon = parseInt(event.target.parentElement.id);
-  const arrayPokemon = poke.map(function(x) {
+  const arrayPokemon = poke.map((x) => {
     return x.id; 
   }).indexOf(eventIdPokemon);
   if (event.target.parentElement.getAttribute('name') === 'pokemon') {
@@ -78,20 +64,32 @@ allPokemones.addEventListener('click', () => { // crear un evento en base a clic
     <img class="img-modal" src="${POKEMON.pokemon[arrayPokemon].img}"/>
     <p class="name-Pokemones"> ${POKEMON.pokemon[arrayPokemon].name}</p>
     <p class="bar"></p>
-    <div>
-      <div>
+    <div class="">
+      <div class="">
         <p>Huevo: ${POKEMON.pokemon[arrayPokemon].egg}</p> 
-        <p>Hora de aparición: ${POKEMON.pokemon[arrayPokemon].spawn_time}</p>        
-      </div>    
-        <p>Tipo: ${POKEMON.pokemon[arrayPokemon].type}</p>       
-        <p>Debilidades: ${POKEMON.pokemon[arrayPokemon].weaknesses}</p>
-        <p>Peso: ${POKEMON.pokemon[arrayPokemon].weight}</p> 
-        <p>Altura: ${POKEMON.pokemon[arrayPokemon].height}</p>
+      </div>
+      <div class="">     
+        <p>Hora de aparición: ${POKEMON.pokemon[arrayPokemon].spawn_time}</p>  
+      </div>              
+    </div> 
+    <div class="dividir">
+      <div class="">     
+        <div class="">        
+          <p>Tipo: ${POKEMON.pokemon[arrayPokemon].type}</p>       
+        </div>     
+        <div class="">             
+          <p>Debilidades: ${POKEMON.pokemon[arrayPokemon].weaknesses}</p>
+        </div>          
+      </div>
+        <div class="">  
+          <p>Peso: ${POKEMON.pokemon[arrayPokemon].weight}</p> 
+          <p>Altura: ${POKEMON.pokemon[arrayPokemon].height}</p>
+        </div>
+      </div>
     </div>`;
   }
   counterPokemones.classList.add('hide');
 });
-
 // cerrando modal (funcion)
 close.addEventListener('click', () => {
   document.getElementById('my-modal').classList.add('hide');
@@ -147,3 +145,26 @@ function openNav() {
 function closeNav() {
   document.getElementById('types-pokemons').style.width = '0';
 }
+const closebtn = document.getElementById('closebtn');
+closebtn.addEventListener('click', () => {
+  document.getElementById('types-pokemons').style.width = '0';
+});
+const btnopen = document.getElementById('btnopen');
+btnopen.addEventListener('click', () => {
+  document.getElementById('types-pokemons').style.width = '250px';
+});
+// Función para ordenar de la ordenar alfabeticamente
+const sortAbc = document.getElementById('filter-az');
+
+sortAbc.addEventListener('change', () => {
+  const orderPokemones = sortAZ(arrayToFilter, sortAbc.value);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = dataPokemones(orderPokemones);
+});
+// Función para ordenar de la ordenar por spawn
+const sortNumSpawn = document.getElementById('filter-spawn');
+sortNumSpawn.addEventListener('change', () => {
+  const orderPokemones = sortSpawn(arrayToFilter, sortNumSpawn.value);
+  counterPokemones.classList.add('hide');
+  allPokemones.innerHTML = dataPokemones(orderPokemones);
+});
