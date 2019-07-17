@@ -58,6 +58,9 @@ describe(sortAZ, () => {
   it('PokeFan debería ordenar de la Z a la A', () => {
     expect(sortAZ(dataPokemons, '1')[0].name).toEqual('Venusaur');
   });
+  it('PokeFan no debería modificar el array original', () => {
+    expect(sortAZ(dataPokemons, 'pokemon')).not.toBe('pokemon');
+  });
 });
 describe(sortSpawn, () => {
   it('Deberia ser una función', () => {
@@ -68,6 +71,9 @@ describe(sortSpawn, () => {
   }); 
   it('PokeFan debería ordenar Spawn descendente', () => {
     expect(sortSpawn(dataPokemons, '0')[0].spawn_chance).toEqual(0.017);
+  });
+  it('PokeFan no debería modificar el array original', () => {
+    expect(sortSpawn(dataPokemons, 'pokemon')).not.toBe('pokemon');
   });
 });
 describe(typesPokemones, () => {
@@ -80,6 +86,9 @@ describe(typesPokemones, () => {
   it('PokeFan debería mostrar pokemon tipo fuego', () => {
     expect(typesPokemones(dataPokemons, 'Water')[0].type[0]).toEqual('Water');
   });
+  it('PokeFan no debería modificar el array original', () => {
+    expect(typesPokemones(dataPokemons, 'pokemon')).not.toBe('pokemon');
+  });
 });
 describe(weaknessPokemones, () => {
   it('Deberia ser una función', () => {
@@ -91,10 +100,13 @@ describe(weaknessPokemones, () => {
   it('PokeFan debería mostrar pokemon con debilidad al fuego', () => {
     expect(weaknessPokemones(dataPokemons, 'Fire')[0].weaknesses[0]).toEqual('Fire');
   });
+  it('PokeFan no debería modificar el array original', () => {
+    expect(weaknessPokemones(dataPokemons, 'pokemon')).not.toBe('pokemon');
+  });
 });
 describe(eegPokemones, () => {
   it('Deberia ser una función', () => {
-    expect(typeof weaknessPokemones).toEqual('function');
+    expect(typeof eegPokemones).toEqual('function');
   });
   it('PokeFan debería mostrar los pokemones con huevos de 2 km', () => {
     expect(eegPokemones(dataPokemons, '2 km')[0].egg).toEqual('2 km');
@@ -108,6 +120,9 @@ describe(eegPokemones, () => {
   it('PokeFan debería mostrar los pokemones sin huevos', () => {
     expect(eegPokemones(dataPokemons, 'Not in Eggs')[0].egg).toEqual('Not in Eggs');
   });  
+  it('PokeFan no debería modificar el array original', () => {
+    expect(eegPokemones(dataPokemons, 'pokemon')).not.toBe('pokemon');
+  });
 });              
 describe(showDataPokemon, () => {
   it('Deberia ser una función', () => {
@@ -116,6 +131,9 @@ describe(showDataPokemon, () => {
   it('PokeFan debería mostrar los 151 pokemones', () => {
     expect(showDataPokemon(dataPokemons)[0].nombre).toEqual('Venusaur');
   });
+  it('PokeFan no debería modificar el array original', () => {
+    expect(showDataPokemon(dataPokemons, 'pokemon')).not.toBe('pokemon');
+  });
 });
 describe(searchPoke, () => {
   it('Deberia ser una función', () => {
@@ -123,5 +141,8 @@ describe(searchPoke, () => {
   }); 
   it('Deberia buscar Venusaur', () => {
     expect(searchPoke(dataPokemons, 'Venusaur')[0].name).toEqual('Venusaur');
+  });
+  it('PokeFan no debería modificar el array original', () => {
+    expect(searchPoke(dataPokemons, 'pokemon')).not.toBe('pokemon');
   });
 });     
