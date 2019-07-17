@@ -44,11 +44,8 @@ const dataPokemones = (pokemon) => {
   }
   return show;
 };
-
 counterPokemones.classList.add('hide');
 allPokemones.innerHTML = dataPokemones(poke);
-
-
 // show mi pokemones en el modal
 allPokemones.addEventListener('click', () => { // crear un evento en base a click en cada poke
   const eventIdPokemon = parseInt(event.target.parentElement.id);
