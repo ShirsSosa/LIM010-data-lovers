@@ -63,4 +63,3 @@ window.typesPokemones = typesPokemones;
 window.eegPokemones = eegPokemones; 
 window.weaknessPokemones = weaknessPokemones;
 window.searchPoke = searchPoke;
-

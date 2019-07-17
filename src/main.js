@@ -14,7 +14,6 @@ const counterPokemones = document.getElementById('counter-pokemones');
 let numberOfAttemps = 0;
 const tipoPokemonSeleccionado = document.getElementById('types-pokemons');
 let arrayToFilter = poke;
-
 const validate = () => {
   if (password.value === passwordTrue && user.value === userTrue) {
     login.classList.add('hide');
