@@ -8,8 +8,7 @@ body{
   background-image: url(./media/fondo.principal.png);
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  
+  background-repeat: no-repeat;  
 }
 .hide {
   display: none !important;
@@ -570,7 +569,7 @@ header{
   font-size: 112px;
   margin: 0;
 }
-.imgbtn{
+.img-btn{
   width: 152px;
 }
 .text-btn{
