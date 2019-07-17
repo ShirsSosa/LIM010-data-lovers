@@ -5,8 +5,11 @@
   outline: none;
 }
 body{
-  height: 100vh;
-  background-image:  url("./media/fondo.principal.png");
+  background-image: url(./media/fondo.principal.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 .hide {
   display: none !important;
@@ -71,9 +74,7 @@ margin: 0px 20px;
   border: none;
   font-size: px;
 }
-.main-screen{
-background-image:url("./media/fondo.principal.png");
-}
+
 .register-user{
   text-align: center;
   color: #FFFFFF;
@@ -99,11 +100,12 @@ margin: 7px;
 text-align: center;
 padding: 5px;
 }
-button.water,
+.button.water,
 button.fire,
 button.grass,
 button.rock,
 button.ground,
+button.steel,
 button.flying,
 button.dragon,
 button.electric,
@@ -111,39 +113,25 @@ button.ghost,
 button.ice,
 button.bug,
 button.fighting,
+button.fairy,
 button.normal,
+button.dark,
 button.psychic,
-button.poison {
-background: none;
-border: none;
-width: 71px;
-margin: 5px;
-font-size: 12px;
-color: white;
+button.poison{
+  background: none;
+  border: none;
+  width: 71px;
+  margin: 5px;
+  font-size: 12px;
+  color: white;
 }
-button.water:hover,
-button.fire:hover,
-button.grass:hover,
-button.rock:hover,
-button.ground:hover,
-button.steel:hover,
-button.flying:hover,
-button.dragon:hover,
-button.electric:hover,
-button.ghost:hover,
-button.ice:hover,
-button.bug:hover,
-button.fighting:hover,
-button.fairy:hover,
-button.normal:hover,
-button.dark:hover,
-button.psychic:hover,
-button.poison:hover{
-   background: rgba(255, 241, 51, 0.6);
-   width: 71px;
-   border: none;
-   border-radius: 10px;
+.water{
+  background: none;
+  box-shadow: none;
+  border: none;
+  color: white;
 }
+
 header{
   background: linear-gradient(#A2DB95, #8ED998);
   justify-content: space-between;
@@ -169,11 +157,18 @@ header{
 }
 .show-pokemones{
   text-align: center;
-  background-image: url("./media/fondo.principal.png");
+
   background-attachment: fixed;
   background-size: cover;
-  height: 100%;
   padding: 36px;
+}
+.modalegg{
+  font-size: 25px;
+    text-align: center;
+}
+.dividir{
+  font-size: 22px;
+  text-align: center;
 }
 .modal {
    position: fixed;
@@ -321,10 +316,38 @@ header{
   text-align: center;
   font-size: 20px;
 }
+.types-pokemons a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.types-pokemons a:hover {
+  color: #f1f1f1;
+}
+
+.types-pokemons .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.btn-burger{
+  display: none;
+}
+.btn-burger::after {
+  font-family: FontAwesome;
+  font-size: 2em;
+  color: #fff;
+  padding: 0 .25em;
+  content: '\f0c9';
+}
 @media(max-width: 768px) {
   body {
-    background: linear-gradient(to right, #24CCAA, #A2DB95);
-    background-size: cover;
     display: table-row;
  }
  .login {
@@ -367,11 +390,6 @@ header{
   font-size: 81px;
   border: none;
   border-radius: 36px;
- }
- .main-screen {
-  background: linear-gradient(to right, #24CCAA, #A2DB95);
-  background-size: cover;
-  display: table-row;
  }
  .show{
   display: inline-block;
@@ -451,25 +469,38 @@ header{
     background: linear-gradient(#8ED998, #73D59D);
   }
   .types-pokemons {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0px;
+    height: max-content;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 230, 0.8);
+    overflow-x: hidden;
+    transition: 0.3s;
+    display: inline-grid;
     }
     .button.water, button.fire, button.grass, button.rock, button.ground, button.flying, button.dragon, button.electric, button.ghost, button.ice, button.bug, button.fighting, button.normal, button.psychic, button.poison {
       background: none;
       border: none;
-      width: 117px;
-      margin: 0px;
+      width: 71px;
+      margin: 5px;
       font-size: 12px;
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   .show-pokemones {
     text-align: center;
-    background-image: url("./media/fondo.principal.png");
-    background-attachment: fixed;
-     background-size: cover;
-     height: 100%;
      padding: 36px;
+     width: unset;
+  }
+  .water{
+    background: none;
+    box-shadow: none;
+    border: none;
+    color: white;
   }
   footer{
     justify-content: center;
@@ -500,54 +531,16 @@ header{
   text-align: center;
   font-size: 50px;
 }
+.modalegg{
+  font-size: 44px;
+  text-align: center;
+}
+.dividir{
+  font-size: 50px;
+  text-align: center;
 }
 .types-pokemons {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.types-pokemons a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.types-pokemons a:hover {
-  color: #f1f1f1;
-}
-
-.types-pokemons .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.btn-burger{
-  display: none;
-}
-.btn-burger::after {
-  font-family: FontAwesome;
-  font-size: 2em;
-  color: #fff;
-  padding: 0 .25em;
-  content: '\f0c9';
-}
-
-@media (max-width: 730px) {
-  .types-pokemons {
-    height: fit-content;
+  height: -webkit-fill-available;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -556,17 +549,32 @@ header{
     background-color: rgb(255, 230, 0.8);
     overflow-x: hidden;
     transition: 0.5s;
-    display: inline-grid;
-  }
-  .types-pokemons a {
-    font-size: 18px;
-  }
-  .btn-burger{
-    display: block;
-    font-size:60px;
-    color: white
-  }
-  .counter{
-    font-size: 88px;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
+.btn-burger{
+  display: block;
+  font-size:60px;
+  color: white
+}
+.counter{
+  font-size: 88px;
+}
+.types-pokemons .closebtn {
+  position: absolute;
+  top: -31px;
+  color: black;
+  left: 136px;
+  font-size: 112px;
+  margin: 0;
+}
+.imgbtn{
+  width: 152px;
+}
+.textbtn{
+  font-size: 51px;
+}
+}
+

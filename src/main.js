@@ -62,7 +62,7 @@ allPokemones.addEventListener('click', () => { // crear un evento en base a clic
     <p class="name-Pokemones"> ${POKEMON.pokemon[arrayPokemon].name}</p>
     <p class="bar"></p>
     <div class="">
-      <div class="">
+      <div class="modalegg">
         <p>Huevo: ${POKEMON.pokemon[arrayPokemon].egg}</p> 
       </div>
       <div class="">     
@@ -152,7 +152,6 @@ btnopen.addEventListener('click', () => {
 });
 // Función para ordenar de la ordenar alfabeticamente
 const sortAbc = document.getElementById('filter-az');
-
 sortAbc.addEventListener('change', () => {
   const orderPokemones = sortAZ(arrayToFilter, sortAbc.value);
   counterPokemones.classList.add('hide');
