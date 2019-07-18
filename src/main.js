@@ -52,7 +52,7 @@ allPokemones.innerHTML = dataPokemones(poke);
 // show mi pokemones en el modal
 allPokemones.addEventListener('click', () => { // crear un evento en base a click en cada poke
   const eventIdPokemon = parseInt(event.target.parentElement.id);
-  const arrayPokemon = poke.map( (x) => {
+  const arrayPokemon = poke.map((x) => {
     return x.id; 
   }).indexOf(eventIdPokemon);
   if (event.target.parentElement.getAttribute('name') === 'pokemon') {
