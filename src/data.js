@@ -17,7 +17,7 @@ const sortAZ = (array, clickOrder) => {
       return 1;
     } else if (aa.name < bb.name) {
       return -1;
-    }
+     }
   });
   if (clickOrder === '0') {
     return sortName;
@@ -32,7 +32,7 @@ const sortSpawn = (array, clickOrder) => {
       return 1;
     } else if (aa.spawn_chance < bb.spawn_chance) {
       return -1;
-    }
+     }
   });
   if (clickOrder === '0') {
     return sortNum;
@@ -54,7 +54,8 @@ const weaknessPokemones = (array, condition) => {
 };
 // Filtrando por nombre en buscador
 const searchPoke = (array, condition) => {
-  return array.filter(caracter => caracter.name === condition);
+  const filtroSearch = array.filter(caracter => caracter.name === condition);
+  return filtroSearch;
 };
 window.showDataPokemon = showDataPokemon;
 window.sortAZ = sortAZ;
