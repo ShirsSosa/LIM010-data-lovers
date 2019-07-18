@@ -44,11 +44,8 @@ const dataPokemones = (pokemon) => {
   }
   return show;
 };
-
 counterPokemones.classList.add('hide');
 allPokemones.innerHTML = dataPokemones(poke);
-
-
 // show mi pokemones en el modal
 allPokemones.addEventListener('click', () => { // crear un evento en base a click en cada poke
   const eventIdPokemon = parseInt(event.target.parentElement.id);
@@ -74,9 +71,6 @@ allPokemones.addEventListener('click', () => { // crear un evento en base a clic
       </div>             
     </div> 
     <div class="dividir">
-      <div class="">     
-        <p>Hora de aparición: ${POKEMON.pokemon[arrayPokemon].spawn_time}</p>  
-      </div> 
       <div>
         <div class="">  
           <p>Peso: ${POKEMON.pokemon[arrayPokemon].weight}</p> 
@@ -87,11 +81,13 @@ allPokemones.addEventListener('click', () => { // crear un evento en base a clic
         </div>
       </div>  
     </div>
+    <div class="">     
+        <p>Hora de aparición: ${POKEMON.pokemon[arrayPokemon].spawn_time}</p>  
+      </div> 
     </div>`;
   }
   counterPokemones.classList.add('hide');
 });
-
 // cerrando modal (funcion)
 close.addEventListener('click', () => {
   document.getElementById('my-modal').classList.add('hide');
@@ -141,7 +137,12 @@ buttonSearch.addEventListener('click', () => {
   counterPokemones.classList.add('hide');
   allPokemones.innerHTML = stringSearch;
 });
-
+function openNav() {
+  document.getElementById('types-pokemons').style.width = '250px';
+}
+function closeNav() {
+  document.getElementById('types-pokemons').style.width = '0';
+}
 const closebtn = document.getElementById('closebtn');
 closebtn.addEventListener('click', () => {
   document.getElementById('types-pokemons').style.width = '0';
@@ -150,7 +151,6 @@ const btnopen = document.getElementById('btnopen');
 btnopen.addEventListener('click', () => {
   document.getElementById('types-pokemons').style.width = '250px';
 });
-
 // Función para ordenar de la ordenar alfabeticamente
 const sortAbc = document.getElementById('filter-az');
 sortAbc.addEventListener('change', () => {
@@ -158,7 +158,6 @@ sortAbc.addEventListener('change', () => {
   counterPokemones.classList.add('hide');
   allPokemones.innerHTML = dataPokemones(orderPokemones);
 });
-
 // Función para ordenar de la ordenar por spawn
 const sortNumSpawn = document.getElementById('filter-spawn');
 sortNumSpawn.addEventListener('change', () => {
