@@ -73,7 +73,10 @@ margin: 0px 20px;
   border: none;
   font-size: px;
 }
-
+.type-modal{
+  text-align: center;
+    font-size: 26px;
+}
 .register-user{
   text-align: center;
   color: #FFFFFF;
@@ -129,6 +132,7 @@ button.poison{
   box-shadow: none;
   border: none;
   color: white;
+  width: 73px;
 }
 
 header{
@@ -416,6 +420,10 @@ header{
     height: 276px;
     padding: 20px;
   }
+  .type-modal{
+    font-size: 40px;
+    text-align: center;
+  }
   .topnav a.active{
   background-color: rgb(13, 71, 119);
   color: white;
@@ -500,6 +508,7 @@ header{
     box-shadow: none;
     border: none;
     color: white;
+    display: contents;
   }
   footer{
     justify-content: center;

@@ -61,27 +61,28 @@ allPokemones.addEventListener('click', () => { // crear un evento en base a clic
     <p class="name-Pokemones"> ${POKEMON.pokemon[arrayPokemon].name}</p>
     <p class="bar"></p>
     <div class="">
+    <div class="">
+      <div class="type-modal">        
+        <p>Tipo: ${POKEMON.pokemon[arrayPokemon].type}</p>       
+      </div>  
       <div class="modalegg">
         <p>Huevo: ${POKEMON.pokemon[arrayPokemon].egg}</p> 
-      </div>
-      <div class="">     
-        <p>Hora de aparición: ${POKEMON.pokemon[arrayPokemon].spawn_time}</p>  
-      </div>              
+      </div>             
     </div> 
     <div class="dividir">
-      <div class="">     
-        <div class="">        
-          <p>Tipo: ${POKEMON.pokemon[arrayPokemon].type}</p>       
-        </div>     
-        <div class="">             
-          <p>Debilidades: ${POKEMON.pokemon[arrayPokemon].weaknesses}</p>
-        </div>          
-      </div>
+      <div>
         <div class="">  
           <p>Peso: ${POKEMON.pokemon[arrayPokemon].weight}</p> 
           <p>Altura: ${POKEMON.pokemon[arrayPokemon].height}</p>
         </div>
-      </div>
+        <div class="">             
+          <p>Debilidades: ${POKEMON.pokemon[arrayPokemon].weaknesses}</p>
+        </div>
+      </div>  
+    </div>
+    <div class="">     
+        <p>Hora de aparición: ${POKEMON.pokemon[arrayPokemon].spawn_time}</p>  
+      </div> 
     </div>`;
   }
   counterPokemones.classList.add('hide');
@@ -106,7 +107,7 @@ filtere.addEventListener('change', () => {
   // mostrando porcentaje de los 151
   const counterPokemonesEgg = (eegPokemones(poke, egg).length) * 1.51;
   counterPokemones.classList.remove('hide');
-  counterPokemones.innerHTML = counterPokemonesEgg;
+  counterPokemones.innerHTML = counterPokemonesEgg + ' % representa' ;
 });
 // Filtro por debilidad en select
 weakness.addEventListener('change', () => {
