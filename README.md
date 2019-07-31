@@ -217,9 +217,9 @@ Cuando le damos click en el Pokémon, abre un modal donde se visualiza mayor inf
 
 ![enter image description here](https://lh3.googleusercontent.com/w6TC_qG_TahP9Zt0UbRYG3WiCiKWIH7glOjjNdOCF-8idVpGwxtvfrLS6dltKXka_dKg1Ys49wK3)
 
- ## PokeFan - Iteración UX DESIGNER 
- 
- 
+## PokeFan - Iteración UX DESIGNER
+
+*
 
 
 
