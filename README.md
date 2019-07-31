@@ -219,6 +219,17 @@ Cuando le damos click en el Pokémon, abre un modal donde se visualiza mayor inf
 
 ## PokeFan - Iteración UX DESIGNER
 
+En esta etapa, haremos testeo con usuarios y visibilizaremos los puntos críticos de la app PokeFan
+
+[**Prototipo Versión Desktop**](https://www.figma.com/file/gycpBYC99Wu7ivnBXv5PYVNf/PokeFan-Mb-Desktop?node-id=0:1)
+
+[**Prototipo Versión Mobile**](https://www.figma.com/file/gycpBYC99Wu7ivnBXv5PYVNf/PokeFan-Mb-Desktop?node-id=11:0)
+
+
+[Demo Versión Desktop](https://www.figma.com/proto/gycpBYC99Wu7ivnBXv5PYVNf/PokeFan-Mb-Desktop?node-id=1:23&viewport=120,436,0.125&scaling=min-zoom)
+[Demo Versión Mobile](https://www.figma.com/proto/gycpBYC99Wu7ivnBXv5PYVNf/PokeFan-Mb-Desktop?node-id=160:524&viewport=-829,-462,1&scaling=min-zoom)
+
+
 **Testeo de Usuario** 
 Objetivo: Evaluar la interface y visibilizar puntos críticos de mejora.
 
@@ -231,29 +242,41 @@ Se le presenta el prototipo al "entrenador 1" y se le pide que ingrese a la plat
 Resultados:
 El "entrenador 1" no tiene problemas para ingresar a la plataforma.
 
-Caso 2: 
-Se le indica al "entrenador 1" visualizar los 151 pokemon y ordenarlos de la A a la Z.
-
-Resultados:
-El "entrenador 1" no sabe si desplazarse por toda la pantalla para ver la totalidad de los pokemones. Por otro lado, logra identificar el filtro correcto de Orden.
-
-Caso 3:
+Caso 2:
 Se le indica al "entrenador 1" visualizar los pokemones tipo Agua.
 
 Resultados:
 El "entrenador 1"  identifica el icono del tipo agua y logra filtrar, sin embargo indica que faltan algunos tipos de pokemon.
 
-Caso 4:
+Caso 3:
 Se le pide al "entrenador 1" filtrar por Spawn ascendente.
 
 Resultados:
 Al "entrenador 1"  se le hace difícil entender si ascendente corresponde a los pokemones más fáciles o difíciles de encontrar. 
 
-Caso 5:
+Caso 4:
 Se le pide al "entrenador 1" ver la ficha de algún pokemon.
 
 Resultados:
-Al "entrenador 1" indica que la información es básica, y no guarda relación con el juego.
+Al "entrenador 1" indica que la información es muy básica, se parece al juego POKEMON GO, pero necesita más información en la ficha.
+
+**PokeFan - puntos de mejora**
+
+Se realizó el testeo a un usuario y se pudo identificar puntos de mejora.
+
+
+**PokeFan - puntos de mejora**
+
+  - Colocar todos los íconos de los tipos de Pokemon,
+ - Definir con exactitud los filtros de Spawn y especificar cuáles son fáciles de encontrar y cuáles difíciles.
+ - Re- evaluar qué información es relevante para un usuario tipo entrenador.
+ - Mejorar la visual de la plataforma, acercarla más a la identidad visual de PokemonGO.
+
+
+
+
+
+
 
 
 
