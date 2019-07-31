@@ -219,7 +219,43 @@ Cuando le damos click en el Pokémon, abre un modal donde se visualiza mayor inf
 
 ## PokeFan - Iteración UX DESIGNER
 
-*
+**Testeo de Usuario** 
+Objetivo: Evaluar la interface y visibilizar puntos críticos de mejora.
+
+Se le explica de forma breve de qué se trata PokeFan y para qué sirve.
+
+Entrenador 1 (*Testeo mobile*):
+Caso 1:
+Se le presenta el prototipo al "entrenador 1" y se le pide que ingrese a la plataforma para lo cual se le ha indicado usuario y clave.
+
+Resultados:
+El "entrenador 1" no tiene problemas para ingresar a la plataforma.
+
+Caso 2: 
+Se le indica al "entrenador 1" visualizar los 151 pokemon y ordenarlos de la A a la Z.
+
+Resultados:
+El "entrenador 1" no sabe si desplazarse por toda la pantalla para ver la totalidad de los pokemones. Por otro lado, logra identificar el filtro correcto de Orden.
+
+Caso 3:
+Se le indica al "entrenador 1" visualizar los pokemones tipo Agua.
+
+Resultados:
+El "entrenador 1"  identifica el icono del tipo agua y logra filtrar, sin embargo indica que faltan algunos tipos de pokemon.
+
+Caso 4:
+Se le pide al "entrenador 1" filtrar por Spawn ascendente.
+
+Resultados:
+Al "entrenador 1"  se le hace difícil entender si ascendente corresponde a los pokemones más fáciles o difíciles de encontrar. 
+
+Caso 5:
+Se le pide al "entrenador 1" ver la ficha de algún pokemon.
+
+Resultados:
+Al "entrenador 1" indica que la información es básica, y no guarda relación con el juego.
+
+
 
 
 
