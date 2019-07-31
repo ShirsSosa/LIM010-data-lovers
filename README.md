@@ -13,9 +13,14 @@
  - Necesidades de usuario
  - Wireflames ( Prototipo de baja y alta fidelidad)
 
- **PokeFan - Desarrollo de Interfaz UI, Testeos de Usuario e Iteraciones** 
+ **PokeFan - Iteración UX DESIGNER**  
 
- - Testeo con usuario
+ - Prototipo Desktop
+ - Prototipo Mobile
+ - Testeo con Usuarios 
+ - Conclusiones
+ - Prototipo Final
+ - Heurística
  
 
 ## Preámbulo 
@@ -212,7 +217,9 @@ Cuando le damos click en el Pokémon, abre un modal donde se visualiza mayor inf
 
 ![enter image description here](https://lh3.googleusercontent.com/w6TC_qG_TahP9Zt0UbRYG3WiCiKWIH7glOjjNdOCF-8idVpGwxtvfrLS6dltKXka_dKg1Ys49wK3)
 
-
+ ## PokeFan - Iteración UX DESIGNER 
+ 
+ 
 
 
 
